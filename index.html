@@ -134,7 +134,15 @@
       ga('send', 'pageview');
     </script>
     <script>
-      $('a').on('click', function(e) { window.open(this.getAttribute('href'), '_blank');});
+      $('a').on('click',
+        function(e) {
+          var url = this.getAttribute('href');
+          
+          if(url !== '#') {
+            window.open(url, '_blank');
+          }
+        }
+      );
     </script>
   </body>
 </html>
