@@ -209,6 +209,11 @@ p {
   width: 30px;
   height: 30px;
 }
+.github-button {
+  display: inline-block;
+  margin-left: 16px;
+  text-shadow: none;
+}
 @media (max-width: 991px) {
   h1 {
     text-shadow: none;
@@ -317,6 +322,17 @@ p {
     padding-left: 8px;
     text-shadow: none;
   }
+  .project-description.tablet {
+    margin-bottom: 8px;
+    text-shadow: none;
+  }
+  .project-description.phone {
+    display: none;
+    text-shadow: none;
+  }
+  .project-description.hone {
+    text-shadow: none;
+  }
   .low-res {
     display: block;
   }
@@ -339,6 +355,9 @@ p {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+  }
+  .github-button {
+    text-shadow: none;
   }
 }
 @media (max-width: 479px) {
@@ -384,11 +403,25 @@ p {
   .project-header {
     text-shadow: none;
   }
+  .project-header.inner-slide {
+    text-shadow: none;
+  }
   .project-description {
     text-shadow: none;
   }
   .project-description.inner-slide-description {
     text-shadow: none;
   }
+  .project-description.tablet {
+    display: none;
+    text-shadow: none;
+  }
+  .project-description.phone {
+    display: block;
+    margin-bottom: 8px;
+    text-shadow: none;
+  }
+  .github-button {
+    text-shadow: none;
+  }
 }
-
