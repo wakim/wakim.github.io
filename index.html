@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
     <script>
       WebFont.load({
         google: {
@@ -22,13 +25,12 @@
         }
       });
     </script>
-    
   </head>
   <body ng-controller="main">
     <div class="parallax-window" >
       <header class="header">
         <section class="w-container title-container">
-          <img class="title-image" src="images/rsz_1me.png" alt="53c00d780da742282a6d00a1_rsz_1me.png">
+          <img class="title-image" src="images/rsz_1me.png" alt="Me">
           <h1 class="title">Wakim Jraige</h1>
           <a class="w-inline-block here" onclick="return false;">
             <img class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
@@ -188,9 +190,6 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/parallax.js/parallax.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/services.js"></script>
