@@ -1723,7 +1723,7 @@ Webflow.define('slider', function ($, _) {
   // Module methods
 
   api.ready = function () {
-    init();
+    //init();
   };
 
   api.design = function () {
@@ -1740,6 +1740,11 @@ Webflow.define('slider', function ($, _) {
     redraw = true;
     init();
   };
+
+  // Custom - Wakim
+  api.init = function() {
+    init();
+  }
 
   // -----------------------------------
   // Private methods

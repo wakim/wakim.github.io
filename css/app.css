@@ -1,0 +1,51 @@
+.more {
+    cursor: pointer;
+}
+
+.language-image {
+  cursor: pointer;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    background-image: -webkit-linear-gradient(rgba(75, 74, 72, 0.59), rgba(49, 43, 61, 0.89));
+    background-image: -o-linear-gradient(rgba(75, 74, 72, 0.59), rgba(49, 43, 61, 0.89));
+    background-image: linear-gradient(rgba(76, 74, 72, 0.59), rgba(49, 43, 61, 0.89));
+}
+
+.interest {
+	font-size: 16px;
+	font-weight: bolder;
+    margin-top: 10px;
+}
+
+.sub {
+	font-weight: normal;
+}
+
+.interval {
+    text-align: right;
+}
+
+.language-image:not(.current) {
+    opacity: 0.5;   
+}
+
+.social-link {
+    color: #fff;
+}
+
+.w-slider {
+    height: 350px;
+}
+
+@media screen and (max-width: 991px) {
+    .interval {
+        text-align: left;
+    }
+    
+    .interest {
+        text-align: center;
+    }
+}

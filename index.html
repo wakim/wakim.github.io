@@ -1,215 +1,209 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Sat Jul 12 2014 15:52:56 GMT+0000 (UTC) -->
-<html data-wf-site="53c00c720da742282a6d0093">
-<head>
-  <meta charset="utf-8">
-  <title>Wakim Jraige - Site Pessoal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/wakim-jraige.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Montserrat:400,700"]
-      }
-    });
-  </script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
-  <style type="text/css">
-    .more {
-        cursor: pointer;
-    }
-  </style>
-  <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-29862067-3', 'wakimjraige.com');
-    ga('require', 'displayfeatures');
-    ga('send', 'pageview');
-  </script>
-</head>
-<body>
-  <div class="header-main-section">
-    <header class="header">
-      <section class="w-container title-container">
-        <img class="title-image" src="images/rsz_1me.png" alt="53c00d780da742282a6d00a1_rsz_1me.png">
-        <h1 class="title">Wakim Jraige</h1>
-        <a class="w-inline-block here" href="#">
-          <img class="language-image pt-br" src="images/20px-Flag_of_Brazil.svg.png" alt="53c027ecbe4f84272a2f4fdb_20px-Flag_of_Brazil.svg.png">
-        </a>
-        <a class="w-inline-block here" href="index.en.html">
-          <img class="language-image en" src="images/Flag_of_the_United_States.svg.png" alt="53c02871da236d0047c40527_Flag_of_the_United_States.svg.png">
-        </a>
-      </section>
-      <div class="separator separator-25"></div>
-    </header>
-    <main class="main">
-      <section class="resume">
-        <p class="main-p">Bacharel em Ciências da Computação pela UFRJ.</p>
-        <p class="main-p">Sou desenvolvedor full stack, especialmente nas áreas Web e Mobile. Motivado por novas tecnologias, ferramentas e práticas, voltadas para melhoria no desenvolvimento, aumento de produtividade e inovação em soluções</p>
-        <div class="w-clearfix holder">
-          <div class="more" less="Menos" more="Mais">Mais...</div>
-        </div>
-        <div class="more-wrapper" id="more-wrapper">
-          <p class="main-p">Comecei na área de desenvolvimento WEB com manutenção e desenvolvimento de aplicações Web utilizando parte do JavaEE (usando JSP, Servlets e JDBC) com Container de Servlets Tomcat e banco de dados SQL&nbsp;Server no back-end. HTML, JavaScript e CSS no front-end.</p>
-          <p class="main-p">Minha segunda experiência em Web foi como integrante de uma equipe de desenvolvimento Scrum utilizando JavaEE (usando EJB, JSF e JPA) com Servidor de Aplicação JBoss 6 e 7 e banco de dados MySQL no back-end. HTML, JavaScript (MVVM usando KnockoutJS) e CSS no front-end. Com realização de testes automatizados com JUnit, Selenium e DBUnit.</p>
-          <p class="main-p">Meu interesse por Mobile surgiu motivado pelo Projeto Final, serviu como uma oportunidade para explorar o mundo Android. Possuo três aplicativos publicados na Play Store e mais um em desenvolvimento, originados de estudos seguindo sempre os padrões da plataforma.</p>
-        </div>
-      </section>
-      <div class="separator separator-50"></div>
-      <section class="projects">
-        <div class="w-row">
-          <div class="w-col w-col-3 w-col-stack">
-            <h3>Projetos Pessoais</h3>
+<html data-wf-site="53c00c720da742282a6d0093" ng-app="root">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wakim Jraige</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="Webflow" />
+    <meta name="theme-color" content="#232230">
+    <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/webflow.css" />
+    <link rel="stylesheet" type="text/css" href="css/wakim-jraige.webflow.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic","Montserrat:400,700"]
+        }
+      });
+    </script>
+    
+  </head>
+  <body ng-controller="main">
+    <div class="parallax-window" >
+      <header class="header">
+        <section class="w-container title-container">
+          <img class="title-image" src="images/rsz_1me.png" alt="53c00d780da742282a6d00a1_rsz_1me.png">
+          <h1 class="title">Wakim Jraige</h1>
+          <a class="w-inline-block here" onclick="return false;">
+            <img class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
+          </a>
+          <a class="w-inline-block here" onclick="return false;">
+            <img class="language-image en{{currentLang === 'en' ? ' current' : ''}}" ng-click="setLocale('en')" src="images/us.png" alt="Inglês">
+          </a>
+        </section>
+        <div class="separator separator-25"></div>
+      </header>
+      
+      <noscript>
+        <style type="text/css">
+          .main {
+            display: none;
+          }
+        </style>
+        <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, so visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
+      </noscript>
+      
+      <main class="main">
+        <section class="resume">
+          <p class="main-p w-row" ng-repeat="resume_item in resume">
+            <span class="w-col w-col-stack">{{resume_item}}</span>
+          </p>
+          
+          <div class="w-clearfix holder">
+            <span class="more" ng-click="toggleMore()">{{more}}...</span>
           </div>
-          <div class="w-col w-col-9 w-col-stack">
-            <div class="w-slider low-res" data-animation="slide" data-duration="500" data-infinite="1" data-hide-arrows="1" data-easing="linear">
-              <div class="w-slider-mask">
-                <div class="w-slide">
-                  <h4 class="project-header inner-slide">Agile Planning Poker</h4>
-                  <p class="project-description inner-slide-description">Meu primeiro aplicativo mobile na plataforma Android, publicado na Play Store, resultante do começo do estudo na área Mobile e plataforma Android para o Projeto Final.</p>
-                  <div class="center">
-                    <a class="w-inline-block" href="https://play.google.com/store/apps/details?id=br.com.planning.poker" target="_blank">
-                      <img src="images/pt-br_generic_rgb_wo_45.png" alt="53c0202b0da742282a6d01e6_pt-br_generic_rgb_wo_45.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="w-slide">
-                  <h4 class="project-header inner-slide">Distributed Planning Poker</h4>
-                  <p class="project-description inner-slide-description">Evolução do Agile Planning Poker, que utiliza a plataforma Play Games® da Google® para permitir a integração e comunicação entre os participantes de Planning Poker em Equipes Distribuídas.</p>
-                  <div class="center">
-                    <a class="w-inline-block" href="https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer" target="_blank">
-                      <img src="images/pt-br_generic_rgb_wo_45.png" alt="53c0202b0da742282a6d01e6_pt-br_generic_rgb_wo_45.png">
-                    </a>
-                  </div>
-                </div>
-                <div class="w-slide">
-                  <h4 class="project-header inner-slide">Wear Planning Poker</h4>
-                  <p class="project-description inner-slide-description tablet">O aplicativo fornece uma série de baralhos para sessões de Planning Poker,&nbsp;&nbsp;adaptado a plataforma Wearable.
-                    <br>
-                    <br>Na presença do Handheld e do Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).</p>
-                  <p class="project-description inner-slide-description phone">O aplicativo fornece uma série de baralhos para sessões de Planning Poker,&nbsp;&nbsp;adaptado a plataforma Wearable.
-                    <br>Na presença do Handheld e do Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).</p>
-                  <div class="center">
-                    <a class="w-inline-block" href="https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer" target="_blank">
-                      <img src="images/pt-br_generic_rgb_wo_45.png" alt="53c0202b0da742282a6d01e6_pt-br_generic_rgb_wo_45.png">
-                    </a>
-                    <div class="w-embed w-iframe github-button">
-                      <iframe src="http://ghbtns.com/github-btn.html?user=wakim&repo=wearable-planning-poker&type=fork&count=false&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
+  
+          <section class="experiences more-wrapper" id="more-wrapper">
+            
+            <div class="separator"></div>
+            
+            <div class="w-row">
+              <div class="w-col w-col-stack">
+                <h3><i class="fa fa-briefcase"></i> {{strings.Experiences}}</h3>
+              </div>
+            </div>
+            
+            <div class="w-row" ng-repeat="job in jobs">
+              <div class="w-col w-col-stack w-col-8">
+                <h4>{{job.location}}</h4>
+              </div>
+              <div class="w-col w-col-stack w-col-4">
+                <h5 class="interval"><i class="fa fa-calendar" style="margin-right: 8px;"></i>{{job.interval.from}} - {{job.interval.to}}</h5>
+              </div>
+              <div class="w-col w-col-stack">
+                <p class="main-p" style="margin-top: 0px; padding-left: 0px;">{{job.desc}}</p>
+              </div>
+            </div>
+          </section>
+  
+          <div class="separator"></div>
+        </section>
+  
+        <section class="interests">
+          <div class="w-row">
+            <div class="w-col w-col-stack">
+              <h3><i class="fa fa-code"></i> {{strings.Some_interests}}</h3>
+            </div>
+          </div>
+          <div class="w-row">
+            <div ng-repeat="interest in globals.interests" class="w-col w-col-stack w-col-3 interest">
+              {{interest.name}}
+              <span ng-if="interest.sub">
+                (<span ng-repeat="sub in interest.sub" class="sub">{{sub}}{{$last ? '' : ', '}}</span>)
+              </span>
+            </div>
+          </div>
+          
+          <div class="separator"></div>
+        </section>
+        
+        <section class="projects">
+          <div class="w-row">
+            <div class="w-col w-col-4 w-col-stack">
+              <h3><i class="fa fa-terminal"></i> {{strings.Personal_Projects}}</h3>
+            </div>
+            
+            <div class="w-col w-col-8 w-col-stack">
+              <div class="w-slider low-res" data-animation="slide" data-duration="500" data-infinite="1" data-hide-arrows="1" data-easing="linear">
+                <div class="w-slider-mask">
+                  <div class="w-slide" ng-repeat="project in personal_projects">
+                    <h4 class="project-header inner-slide">{{project.name}}</h4>
+                    <p style="text-align: center;">
+                      <i ng-repeat="fa_icon in project.fa_icons" class="fa {{fa_icon}}" style="padding-right: 8px; padding-left: 8px;"></i>
+                    </p>
+                    <p class="project-description inner-slide-description phone">{{project.desc}}</p>
+                    <p class="project-description inner-slide-description tablet" ng-if="project.more_desc">{{project.more_desc}}</p>
+                    <div class="center" style="margin-top: 8px;">
+                      <a class="w-inline-block" ng-if="project.google_play_link" ng-href="{{project.google_play_link}}" target="_blank">
+                        <img ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
+                      </a>
+                      <div class="w-embed w-iframe github-button" ng-if="project.github_source" style="float: right;">
+                        <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="w-slider-arrow-left">
-                <div class="w-icon-slider-left"></div>
-              </div>
-              <div class="w-slider-arrow-right">
-                <div class="w-icon-slider-right"></div>
-              </div>
-              <div class="w-slider-nav w-shadow w-round"></div>
-            </div>
-            <ul class="high-res">
-              <li>
-                <h4 class="project-header">Agile Planning Poker</h4>
-                <p class="project-description">Meu primeiro aplicativo mobile na plataforma Android, publicado na Play Store, resultante do começo do estudo na área Mobile e plataforma Android para o Projeto Final.
-                  <br>
-                  <br>O aplicativo fornece uma série de baralhos, incluindo um baralho personalizável, para sessões de Planning Poker. Com animações que tornam o uso mais interessante.</p>
-                <a class="w-inline-block" href="https://play.google.com/store/apps/details?id=br.com.planning.poker"
-                target="_blank" data-ix="new-interaction-2">
-                  <img src="images/pt-br_generic_rgb_wo_45.png" alt="53c0202b0da742282a6d01e6_pt-br_generic_rgb_wo_45.png">
-                </a>
-              </li>
-              <li>
-                <h4 class="project-header">Distributed Planning Poker</h4>
-                <p class="project-description">Evolução do Agile Planning Poker, que utiliza a plataforma Play Games® da Google® para permitir a integração e comunicação entre os participantes de Planning Poker em equipes distribuídas.
-                  <br>
-                  <br>O aplicativo facilita a realização de sessões de Planning Poker de equipes distribuídas, não importanto a localização dos membros, fornecendo acompanhamento para as etapas de um rodada de votação, incluído um espaço para discussão de ideias.</p>
-                <a class="w-inline-block" href="https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer" target="_blank" data-ix="new-interaction-2">
-                  <img src="images/pt-br_generic_rgb_wo_45.png" alt="53c0202b0da742282a6d01e6_pt-br_generic_rgb_wo_45.png">
-                </a>
-              </li>
-              <li>
-                <h4 class="project-header">Wear Planning Poker</h4>
-                <p class="project-description">O aplicativo fornece uma série de baralhos para sessões de Planning Poker,&nbsp;&nbsp;adaptado a plataforma Wearable. 
-                  <br>
-                  <br>Se integra opcionalmente com o dispositivo Handheld (Smartphone ou Tablet)&nbsp;para sincronização de dados.
-                  <br>
-                  <br>Na presença do Handheld e do Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).</p>
-                <a class="w-inline-block" href="https://play.google.com/store/apps/details?id=br.com.planning.poker.wear" target="_blank">
-                  <img src="images/pt-br_generic_rgb_wo_45.png" alt="53c0202b0da742282a6d01e6_pt-br_generic_rgb_wo_45.png">
-                </a>
-                <div class="w-embed w-iframe github-button">
-                  <iframe src="http://ghbtns.com/github-btn.html?user=wakim&repo=wearable-planning-poker&type=fork&count=false&size=large" height="30" width="170" frameborder="0" scrolling="0" style="width:170px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
+                
+                <div class="w-slider-arrow-left">
+                  <div class="w-icon-slider-left"></div>
                 </div>
-              </li>
-            </ul>
+                
+                <div class="w-slider-arrow-right">
+                  <div class="w-icon-slider-right"></div>
+                </div>
+                
+                <div class="w-slider-nav w-shadow w-round"></div>
+              </div>
+              
+              <ul class="high-res">
+                <li ng-repeat="project in personal_projects" style="margin-bottom: 16px;">
+                  <h4 class="project-header">{{project.name}}</h4>
+                  <p><i ng-repeat="fa_icon in project.fa_icons" style="padding-right: 8px; {{$first ? '' : 'padding-left: 8px;'}}'" class="fa {{fa_icon}}"></i></p>
+                  <p class="project-description">{{project.desc}} <br /><br /> {{project.more_desc}}</p>
+                  <a class="w-inline-block" ng-href="{{project.google_play_link}}" target="_blank" data-ix="new-interaction-2" ng-if="project.google_play_link">
+                    <img ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
+                  </a>
+                  <div class="w-embed w-iframe github-button" ng-if="project.github_source">
+                    <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
-  </div>
-  <footer class="footer-section">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-6 w-col-small-6">
-          <div class="social-widget-wrapper">
-            <a class="w-inline-block social-link here" href="#" id="mail">
-              <img src="images/mail.png" alt="53c157ed089727f85275ed95_mail.png">
-            </a>
-            <a class="w-inline-block social-link" href="https://plus.google.com/+WakimJraige" target="_blank">
-              <img src="images/ic_post_gplus.png" alt="53c05300be4f84272a2f5250_ic_post_gplus.png">
-            </a>
-            <a class="w-inline-block social-link" href="http://br.linkedin.com/in/wakimjraige" target="_blank">
-              <img src="images/ic_post_linkedin.png" alt="53c05457da236d0047c406d4_ic_post_linkedin.png">
-            </a>
-            <a class="w-inline-block social-link" href="http://pt.stackoverflow.com/users/6436/wakim" target="_blank">
-              <img src="images/stackoverflow-m.png" alt="53c056a5e7a740014748b534_stackoverflow-m.png">
-            </a>
+        </section>
+      </main>
+    </div>
+    
+    <footer class="footer-section">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6 w-col-small-6">
+            <div class="social-widget-wrapper">
+              <a class="w-inline-block social-link here" href="#" id="mail">
+                <i class="fa fa-fw fa-envelope-o"></i>
+              </a>
+              <a class="w-inline-block social-link" href="https://plus.google.com/+WakimJraige" target="_blank">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a class="w-inline-block social-link" href="http://br.linkedin.com/in/wakimjraige" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a class="w-inline-block social-link" href="http://pt.stackoverflow.com/users/6436/wakim" target="_blank">
+                <i class="fa fa-stack-overflow"></i>
+              </a>
+              <a class="w-inline-block social-link" href="https://github.com/wakim" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="w-col w-col-6 w-col-small-6">
-          <div class="copyright">© 2014 Bristol App. All right reserved.&nbsp;</div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <div class="copyright">© 2014 Bristol App. All right reserved.&nbsp;</div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
-  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-  <script type="text/javascript">
-    $('a:not(.here)').on('click',
-        function(e) {
-            var url = this.getAttribute('href');
-            if(url !== '#') {
-                window.open(url, '_blank');
-            }
-        }
-    );
-    
-    $(function(){
-        $('.more').click(function(){
-            var $this = $(this);
-            if(! $this.hasClass('state-less')) {
-                $this.html($this.attr('less') + '...');
-            } else {
-                $this.html($this.attr('more') + '...');
-            }
-            $('#more-wrapper').slideToggle();
-            $this.toggleClass('state-less');
-        });
-    });
-    
-    $(function(){
-        var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
-        $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));
-    });
-  </script>
-</body>
+    </footer>
+    <script type="text/javascript" src="bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/parallax.js/parallax.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/services.js"></script>
+    <script type="text/javascript" src="js/webflow.js"></script>
+    <!--[if lte IE 9]><script src="bower_components/placeholders/dist/placeholders.min.js"></script><![endif]-->
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-29862067-3', 'wakimjraige.com');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
