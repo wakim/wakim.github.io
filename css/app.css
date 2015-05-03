@@ -10,6 +10,7 @@
     min-height: 400px;
     background: transparent;
     background-image: -webkit-linear-gradient(rgba(75, 74, 72, 0.59), rgba(49, 43, 61, 0.89));
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(75, 74, 72, 0.59)), color-stop(100%, rgba(49, 43, 61, 0.89)));
     background-image: -o-linear-gradient(rgba(75, 74, 72, 0.59), rgba(49, 43, 61, 0.89));
     background-image: linear-gradient(rgba(76, 74, 72, 0.59), rgba(49, 43, 61, 0.89));
 }

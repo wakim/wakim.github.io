@@ -48,7 +48,7 @@
             angular.element('#more-wrapper').slideToggle();
         };
         
-        $http.get('model.json', { responseType: "json", headers: { "Accept": "application/json;charset=utf-8" } }).success($scope.setModel);
+        $http.get('model-v1.json', { responseType: "json", headers: { "Accept": "application/json;charset=utf-8" } }).success($scope.setModel);
     }]);
 
     root_module.filter('trustUrl', ['$sce', function($sce){
@@ -71,7 +71,8 @@
     $(function(){
         var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
         $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));
-    });
 
-    $('.parallax-window').parallax({imageSrc: 'images/beach-1600px.jpg'});
+        $('.parallax-window').parallax({imageSrc: 'images/beach-1600px.jpg'});
+    	$(window).trigger('resize');
+    });
 })(jQuery);
