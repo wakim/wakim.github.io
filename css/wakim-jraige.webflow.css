@@ -120,6 +120,8 @@ p {
   border: 2px solid white;
   border-radius: 50%;
   box-shadow: black 3px 3px 12px -1px;
+  width: 120px;
+  height: 120px;
 }
 .separator {
   display: block;
