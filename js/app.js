@@ -71,8 +71,5 @@
     $(function(){
         var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
         $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));
-
-        $('.parallax-window').parallax({imageSrc: 'images/beach-1600px.jpg'});
-    	$(window).trigger('resize');
     });
 })(jQuery);
