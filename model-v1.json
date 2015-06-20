@@ -5,12 +5,21 @@
 			"Sou desenvolvedor full stack, especialmente nas áreas Web e Mobile. Motivado por novas tecnologias, ferramentas e práticas, voltadas para melhoria no desenvolvimento, aumento de produtividade e inovação em soluções"
 		],
 		"jobs": [
+		    {
+				"location": "HE:labs",
+				"desc": "Em breve...",
+				"interval": {
+					"from": "06/2015",
+					"to": "atual"
+				}
+			},
+		    
 			{
 				"location": "Stefanini",
-				"desc": "Atualmente sou Analista Desenvolvedor Java, na Stefanini, em um projeto do Fundo de Garantia da Caixa Econômica Federal. Utilizando a plataforma JavaEE (com EJB, JSF, JPA) em uma arquitetura modular com servidor de aplicação JBoss 6.3 EAP. Com uma grande integração com Banco de Dados DB2 no Back-end. Um front-end com Bootstrap, CSS e Javascript.",
+				"desc": "Atuei como Analista Desenvolvedor Java, na Stefanini, em um projeto do Fundo de Garantia da Caixa Econômica Federal. Utilizando a plataforma JavaEE (com EJB, JSF, JPA) em uma arquitetura modular com servidor de aplicação JBoss 6.3 EAP. Com uma grande integração com Banco de Dados DB2 no Back-end. Um front-end com Bootstrap, CSS e Javascript.",
 				"interval": {
 					"from": "10/2014",
-					"to": "atual"
+					"to": "05/2015"
 				}
 			},
 			
@@ -63,16 +72,24 @@
  	"en": {
  		"resume": [
  			"Bachelor of Computer Science UFRJ.",
-
  			"I'm a full stack developer, acting specially in Web and Mobile areas. Motivated by new technologies, tools and practices, focused on development improvements, productivity gain and innovations in solutions"
  		],
  		"jobs": [
+ 		    {
+				"location": "HE:labs",
+				"desc": "Coming soon...",
+				"interval": {
+					"from": "06-2015",
+					"to": "actual"
+				}
+			},
+			
 			{
 				"location": "Stefanini",
-				"desc": "Atually i'm Java Development Analyst, in Stefanini, on a Guarantee Fund Project of Caixa Econômica Federal. Using JavaEE platform (with EJB, JSF, JPA) with a modular architecture running on JBoss 6.3 EAP application server. With highly integration with DB2 database in back-end. In front-end, Bootstrap, CSS and Javascript.",
+				"desc": "I was a Java Development Analyst, in Stefanini, on a Guarantee Fund Project of Caixa Econômica Federal. Using JavaEE platform (with EJB, JSF, JPA) with a modular architecture running on JBoss 6.3 EAP application server. With highly integration with DB2 database in back-end. In front-end, Bootstrap, CSS and Javascript.",
 				"interval": {
 					"from": "10-2014",
-					"to": "actual"
+					"to": "05-2014"
 				}
 			},
 			
