@@ -1,4 +1,4 @@
-(function(angular, undefined){
+(function(angular, undefined) {
     var root_module = angular.module('root', []);
     
     function buildEmptyModel() {
@@ -13,7 +13,7 @@
         $scope.more = '';
         $scope.currentLang = '';
         
-        $scope.setLocale = function(newLang){
+        $scope.setLocale = function(newLang) {
             angular.extend($scope, $scope.model[newLang]);
             angular.extend($scope.strings, $scope.model._strings[newLang]);
             
@@ -48,17 +48,23 @@
             angular.element('#more-wrapper').slideToggle();
         };
         
-        $http.get('model-v1.json', { responseType: "json", headers: { "Accept": "application/json;charset=utf-8" } }).success($scope.setModel);
+        $http.get('model-v2.json', { responseType: "json", headers: { "Accept": "application/json;charset=utf-8" } }).success($scope.setModel);
     }]);
 
-    root_module.filter('trustUrl', ['$sce', function($sce){
+    root_module.filter('trustHtml', ['$sce', function($sce) {
         return function(input) {
-            return $sce.trustAsResourceUrl(input);
+            return angular.isString(input) ? $sce.trustAsHtml(input) : input;
+        };
+    }]);
+
+    root_module.filter('trustUrl', ['$sce', function($sce) {
+        return function(input) {
+            return angular.isString(input) ? $sce.trustAsResourceUrl(input) : input;
         };
     }]);
 })(angular);
 
-(function($, undefined){
+(function($, undefined) {
     $('a:not(.here)').on('click',
         function(e) {
             var url = this.getAttribute('href');
@@ -68,7 +74,7 @@
         }
     );
     
-    $(function(){
+    $(function() {
         var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
         $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));
     });
