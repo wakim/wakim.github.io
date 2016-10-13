@@ -1,11 +1,11 @@
 (function(angular, undefined) {
-    var root_module = angular.module('root', []);
+    var app = angular.module('root', []);
     
     function buildEmptyModel() {
         return {title: '', resume: [], jobs: [], personal_projects: [], interests: []};
     }
     
-    root_module.controller('main', ['$scope', '$http', '$sce', "localStorage", function($scope, $http, $sce, localStorageService){
+    app.controller('main', ['$scope', '$http', '$sce', "localStorage", function($scope, $http, $sce, localStorageService){
         angular.extend($scope, buildEmptyModel());
         
         $scope.strings = {};
@@ -21,12 +21,6 @@
             $scope.more = $scope.strings[$scope.moreState];
             
             localStorageService.setItem('lang', newLang);
-            
-            // Webflow Slide does not expose an api...
-            setTimeout(function(){
-                Webflow && Webflow.require('slider').init();
-                angular.element('.w-slider-nav').children().eq(0).trigger('tap');
-            }, 1);
         };
         
         $scope.setModel = function(data) {
@@ -43,7 +37,7 @@
                 $scope.moreState = 'More';
             }
             
-             $scope.more = $scope.strings[$scope.moreState];
+            $scope.more = $scope.strings[$scope.moreState];
             
             angular.element('#more-wrapper').slideToggle();
         };
@@ -51,17 +45,31 @@
         $http.get('model-v2.json', { responseType: "json", headers: { "Accept": "application/json;charset=utf-8" } }).success($scope.setModel);
     }]);
 
-    root_module.filter('trustHtml', ['$sce', function($sce) {
+    app.filter('trustHtml', ['$sce', function($sce) {
         return function(input) {
             return angular.isString(input) ? $sce.trustAsHtml(input) : input;
         };
     }]);
 
-    root_module.filter('trustUrl', ['$sce', function($sce) {
+    app.filter('trustUrl', ['$sce', function($sce) {
         return function(input) {
             return angular.isString(input) ? $sce.trustAsResourceUrl(input) : input;
         };
     }]);
+
+    app.directive('slider', function($timeout) {
+        return {
+            link: function(scope, element, attr) {
+                $timeout(function() {
+                    $('.slider').unslider(
+                        {
+                            autoplay: true,
+                        }
+                    );
+                }, 1);
+            }
+        }
+    });
 })(angular);
 
 (function($, undefined) {
