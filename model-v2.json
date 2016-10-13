@@ -4,7 +4,7 @@
 		"jobs": [
 		    {
 				"location": "HE:labs",
-				"desc": "Desenvolvedor Android, atuando em pequenos times remotos ágeis multidisciplinares, com constante comunicação e colaboração dos clientes, sempre com objetivo de transformar idéias em produtos digitais, com foco total em MVP.<br /><br />Para atingir o objetivo de realizar entregas semanais de software funcional, utilizamos o framework XP com envolvimento dos clientes, para construir soluções que atendam as necessidades em termos de tempo e qualidade.<br /><br />Sempre que possível utilizamos ferramentas, padrões e tecnologias atuais do mercado, entre elas: Kotlin, MVP, TDD, Continuos Integration and Deployment, Dagger2, Rx, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm e entre outras.",
+				"desc": "Desenvolvedor Android, atuando em pequenos times remotos ágeis multidisciplinares, com constante comunicação e colaboração dos clientes, sempre com objetivo de transformar idéias em produtos digitais, com foco total em MVP.<br /><br />Para atingir o objetivo de realizar entregas semanais de software funcional, utilizamos o framework XP com envolvimento dos clientes, para construir soluções que atendam as necessidades em termos de tempo, escopo e qualidade.<br /><br />Sempre que possível utilizamos ferramentas, padrões e tecnologias atuais do mercado, entre elas: Kotlin, MVP, TDD, Continuos Integration and Deployment, Dagger2, RxJava, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm e entre outras.",
 				"interval": {
 					"from": "06/2015",
 					"to": "atual"
@@ -13,7 +13,7 @@
 		    
 			{
 				"location": "Stefanini",
-				"desc": "Atuei como Analista Desenvolvedor Java, na Stefanini, em um projeto do Fundo de Garantia da Caixa Econômica Federal.<br /><br />Utilizando a plataforma JavaEE (com EJB, JSF, JPA) em uma arquitetura modular com servidor de aplicação JBoss 6.3 EAP. Com uma grande integração com Banco de Dados DB2 no Back-end. Um front-end com Bootstrap, CSS e Javascript.",
+				"desc": "Atuei como Analista Desenvolvedor Java, na Stefanini, em um projeto do Fundo de Garantia da Caixa Econômica Federal.<br /><br />Utilizando a plataforma Java EE (com EJB, JSF, JPA) em uma arquitetura modular com servidor de aplicação JBoss 6.3 EAP. Com uma grande integração com Banco de Dados DB2 no Back-end. Um front-end com Bootstrap, CSS e Javascript.",
 				"interval": {
 					"from": "10/2014",
 					"to": "05/2015"
@@ -22,7 +22,7 @@
 			
 			{
 				"location": "GPE (ScrumHalf)",
-				"desc": "Minha segunda experiência em Web foi como integrante de uma equipe de desenvolvimento Scrum.<br /><br />Utilizando JavaEE (usando EJB, JSF e JPA) com servidor de aplicação JBoss 6 e 7 e banco de dados MySQL no back-end. HTML, JavaScript (MVVM usando KnockoutJS) e CSS no front-end. Com realização de testes automatizados com JUnit, Selenium e DBUnit.",
+				"desc": "Minha segunda experiência em Web foi como integrante de uma equipe de desenvolvimento Scrum. Trabalhei no desenvolvimento e manutenção do ScrumHalf.<br /><br />Utilizando Java EE (usando EJB, JSF e JPA) com servidor de aplicação JBoss 6 e 7 e banco de dados MySQL no back-end. HTML, JavaScript (MVVM usando KnockoutJS) e CSS no front-end. Com realização de testes automatizados com JUnit, Selenium e DBUnit.",
 				"interval": {
 					"from": "12/2011",
 					"to": "07/2014"
@@ -31,7 +31,7 @@
 			
 			{
 				"location": "COPPETEC",
-				"desc": "Comecei na área de desenvolvimento WEB com manutenção e desenvolvimento de aplicações Web.<br /><br />Utilizando parte do JavaEE (usando JSP, Servlets e JDBC) com Container de Servlets Tomcat e banco de dados SQL Server no back-end. HTML, JavaScript e CSS no front-end.",
+				"desc": "Comecei na área de desenvolvimento WEB com manutenção e desenvolvimento de aplicações Web.<br /><br />Utilizando parte do Java EE (usando JSP, Servlets e JDBC) com Container de Servlets Tomcat e banco de dados SQL Server no back-end. HTML, JavaScript e CSS no front-end.",
 				"interval": {
 					"from": "07/2010",
 					"to": "06/2011"
@@ -42,14 +42,14 @@
 		"personal_projects": [
 			{
 				"name": "ESL Pod Client",
-				"desc": "Pequeno projeto de um player mobile Android para podcasts do site English as Second Language",
+				"desc": "Pequeno projeto de um player mobile Android para podcasts do site English as Second Language.",
 				"more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin.",
 				"github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=esl-pod-client&type=fork&count=false&size=large",
 				"fa_icons": ["fa-android", "fa-mobile"]
 			},
 			{
 				"name": "Github Sample",
-				"desc": "Pequeno projeto para busca de usuários e repositórios no Github",
+				"desc": "Pequeno projeto para busca de usuários e repositórios no Github.",
 				"more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin juntamente com testes unitários e testes de instrumentação.",
 				"github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=github-sample&type=fork&count=false&size=large",
 				"fa_icons": ["fa-android", "fa-mobile"]
@@ -72,7 +72,7 @@
 
 			{
 				"name": "Wear Planning Poker",
-				"desc": "O aplicativo fornece uma série de baralhos para sessões de Planning Poker, adaptado a plataforma Wearable. \n Na presença do Handheld e do Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).",
+				"desc": "O aplicativo fornece uma série de baralhos para sessões de Planning Poker, adaptado a plataforma Wearable.<br />Na presença do dispositivo com Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).",
 				"more_desc": "Se integra opcionalmente com o dispositivo móvel (Smartphone ou Tablet) para sincronização de dados.",
 				"google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer",
 				"fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
@@ -94,7 +94,7 @@
 			
 			{
 				"location": "Stefanini",
-				"desc": "I was a Java Development Analyst, in Stefanini, on a Guarantee Fund Project of Caixa Econômica Federal.<br /><br />Using JavaEE platform (with EJB, JSF, JPA) with a modular architecture running on JBoss 6.3 EAP application server. With highly integration with DB2 database in back-end. In front-end, Bootstrap, CSS and Javascript.",
+				"desc": "I was a Java Development Analyst, in Stefanini, on a Guarantee Fund Project of Caixa Econômica Federal.<br /><br />Using Java EE platform (with EJB, JSF, JPA) with a modular architecture running on JBoss 6.3 EAP application server. With highly integration with DB2 database in back-end. In front-end, Bootstrap, CSS and Javascript.",
 				"interval": {
 					"from": "10-2014",
 					"to": "05-2014"
@@ -103,7 +103,7 @@
 			
 			{
 				"location": "GPE (ScrumHalf)",
-				"desc": "My Second experience on Web as part of a Scrum Team.<br /><br />Using the complete JavaEE (using EJB, JSF and JPA) with JBoss 6 and 7 as Application Server and MySQL in back-end. HTML, JavaScript (MVVM using KnockoutJS) and CSS in the front-end. With automated tests using Selenium, JUnit and DBUnit.",
+				"desc": "My Second experience on Web as part of a Scrum Team. Worked on ScrumHalf on development and maintenance.<br /><br />Using the complete Java EE (using EJB, JSF and JPA) with JBoss 6 and 7 as Application Server and MySQL in back-end. HTML, JavaScript (MVVM using KnockoutJS) and CSS in the front-end. With automated tests using Selenium, JUnit and DBUnit.",
 				"interval": {
 					"from": "12-2011",
 					"to": "07-2014"
@@ -112,7 +112,7 @@
 			
 			{
 				"location": "COPPETEC",
-				"desc": "Started on Web Development area with development and maintenance of an web applications.<br /><br />Using part of JavaEE (using JSP, Servlets and JDBC) with Tomcat as Servlet Container and SQL Server in the back-end and HTML, JavaScript and CSS in the front-end.",
+				"desc": "Started on Web Development area with development and maintenance of an web applications.<br /><br />Using part of Java EE (using JSP, Servlets and JDBC) with Tomcat as Servlet Container and SQL Server in the back-end and HTML, JavaScript and CSS in the front-end.",
 				"interval": {
 					"from": "07-2010",
 					"to": "06-2011"
@@ -123,14 +123,14 @@
 		"personal_projects": [
 			{
 				"name": "ESL Pod Client",
-				"desc": "Project of a small mobile player for English as Second Language website podcasts for Android platform",
+				"desc": "Project of a small mobile player for English as Second Language website podcasts for Android platform.",
 				"more_desc": "The main goal was learn the use of MVP architecture and Kotlin on Android environment.",
 				"github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=esl-pod-client&type=fork&count=false&size=large",
 				"fa_icons": ["fa-android", "fa-mobile"]
 			},
 			{
 				"name": "Github Sample",
-				"desc": "Small project to search users and repositories on Github",
+				"desc": "Small project to search users and repositories on Github.",
 				"more_desc": "The main goal was to learn the MVP archicture with Kotlin on Android environment and applying some unit and instrumentation tests.",
 				"github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=github-sample&type=fork&count=false&size=large",
 				"fa_icons": ["fa-android", "fa-mobile"]
@@ -153,7 +153,7 @@
 
 			{
 				"name": "Wear Planning Poker",
-				"desc": "This app provides a set of decks for Planning Poker sessions, adapted to Wearable Platform. \n Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state (colors and selection).",
+				"desc": "This app provides a set of decks for Planning Poker sessions, adapted to Wearable Platform.<br />Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state (colors and selection).",
 				"more_desc": "Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state.",
 				"fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
 				"google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer",

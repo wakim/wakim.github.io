@@ -40,7 +40,7 @@
         <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, so visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
       </noscript>
       
-      <main class="main card-1">
+      <main class="main card-1" class="ng-cloak">
         <section class="resume">
           <p class="main-p w-row" ng-bind-html="resume | trustHtml"></p>
 
@@ -99,8 +99,8 @@
                     <p style="text-align: center;">
                       <i ng-repeat="fa_icon in project.fa_icons" class="fa {{fa_icon}}" style="padding-right: 8px; padding-left: 8px;"></i>
                     </p>
-                    <p class="project-description inner-slide-description phone">{{project.desc}}</p>
-                    <p class="project-description inner-slide-description tablet" ng-if="project.more_desc">{{project.more_desc}}</p>
+                    <p class="project-description inner-slide-description phone" ng-bind-html="project.desc | trustHtml"></p>
+                    <p class="project-description inner-slide-description tablet" ng-if="project.more_desc" ng-bind-html="project.more_desc | trustHtml"></p>
                     <div class="center" style="margin-top: 8px;">
                       <a class="w-inline-block" ng-if="project.google_play_link" ng-href="{{project.google_play_link}}" target="_blank">
                         <img ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
@@ -127,7 +127,7 @@
                 <li ng-repeat="project in personal_projects" style="margin-bottom: 16px;">
                   <h4 class="project-header">{{project.name}}</h4>
                   <p><i ng-repeat="fa_icon in project.fa_icons" style="padding-right: 8px; {{$first ? '' : 'padding-left: 8px;'}}'" class="fa {{fa_icon}}"></i></p>
-                  <p class="project-description">{{project.desc}} <br /><br /> {{project.more_desc}}</p>
+                  <p class="project-description" ng-bind-html="(project.desc + '<br />' + project.more_desc) | trustHtml"></p>
                   <a class="w-inline-block" ng-href="{{project.google_play_link}}" target="_blank" data-ix="new-interaction-2" ng-if="project.google_play_link">
                     <img ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
                   </a>
