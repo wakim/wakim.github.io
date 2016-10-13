@@ -35,28 +35,15 @@
     color: #000;
 }
 
-.unslider-nav ol li {
+.owl-prev {
     display: inline-block;
-    float: none;
-    width: 6px;
-    height: 6px;
-    margin: 0 4px;
-    padding: 3px;
-    background: transparent;
-    border-radius: 5px;
-    overflow: hidden;
-    text-indent: -999em;
-    border: 2px solid #000;
-    cursor: pointer;
-    opacity: .4;
+    float: left;
 }
 
-.unslider-nav ol li.unslider-active {
-    background: #000;
-    cursor: default;
-    opacity: 1;
+.owl-next {
+    display: inline-block;
+    float: right;
 }
-
 
 @media screen and (max-width: 991px) {
     .interval {

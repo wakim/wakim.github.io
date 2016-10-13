@@ -5,7 +5,7 @@
         return {title: '', resume: [], jobs: [], personal_projects: [], interests: []};
     }
     
-    app.controller('main', ['$scope', '$http', '$sce', "localStorage", function($scope, $http, $sce, localStorageService){
+    app.controller('main', ['$scope', '$http', '$sce', '$timeout', "localStorage", function($scope, $http, $sce, $timeout, localStorageService){
         angular.extend($scope, buildEmptyModel());
         
         $scope.strings = {};
@@ -28,6 +28,19 @@
             $scope.globals = data.globals;
             
             $scope.setLocale(localStorageService.getItem('lang') || 'pt');
+
+            $timeout(function() {
+                $('.owl-carousel').owlCarousel(
+                    {
+                        loop:true,
+                        items: 1,
+                        nav: true,
+                        dots: true,
+                        autoplay: true,
+                        autoplayHoverPause: true
+                    }
+                );
+            }, 1);
         };
         
         $scope.toggleMore = function() {
@@ -56,20 +69,6 @@
             return angular.isString(input) ? $sce.trustAsResourceUrl(input) : input;
         };
     }]);
-
-    app.directive('slider', function($timeout) {
-        return {
-            link: function(scope, element, attr) {
-                $timeout(function() {
-                    $('.slider').unslider(
-                        {
-                            autoplay: true,
-                        }
-                    );
-                }, 1);
-            }
-        }
-    });
 })(angular);
 
 (function($, undefined) {

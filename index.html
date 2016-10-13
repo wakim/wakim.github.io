@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Sat Jul 12 2014 15:52:56 GMT+0000 (UTC) -->
-<html data-wf-site="53c00c720da742282a6d0093" ng-app="root">
+<html ng-app="root">
   <head>
     <meta charset="utf-8" />
     <title>Wakim Jraige</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
+    <link rel="stylesheet" type="text/css" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/unslider/dist/css/unslider.css" />
-    <link rel="stylesheet" type="text/css" href="bower_components/unslider/dist/css/unslider-dots.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/webflow.css" />
-    <link rel="stylesheet" type="text/css" href="css/wakim-jraige.webflow.css" />
-    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/webflow.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/wakim-jraige.webflow.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/app.css" /> 
     
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
-    <script type="text/javascript" src="bower_components/unslider/dist/js/unslider-min.js"></script>
+    <script type="text/javascript" src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
   </head>
   <body ng-controller="main">
     <div class="header-main-section">
@@ -29,10 +26,10 @@
           <img class="title-image" src="images/time-wakim.jpg" alt="Me">
           <h1 class="title">Wakim Jraige</h1>
           <a class="w-inline-block here" onclick="return false;">
-            <img class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
+            <img width="16" height="11" class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
           </a>
           <a class="w-inline-block here" onclick="return false;">
-            <img class="language-image en{{currentLang === 'en' ? ' current' : ''}}" ng-click="setLocale('en')" src="images/us.png" alt="Inglês">
+            <img width="16" height="11" class="language-image en{{currentLang === 'en' ? ' current' : ''}}" ng-click="setLocale('en')" src="images/us.png" alt="Inglês">
           </a>
         </section>
       </header>
@@ -99,9 +96,8 @@
             
             <div class="w-col w-col-12 w-col-stack">
               <div class="low-res">
-                <div class="slider">
-                  <ul>
-                    <li ng-repeat="project in personal_projects">
+                <div class="owl-carousel owl-theme">
+                    <div ng-repeat="project in personal_projects">
                       <h4 class="project-header inner-slide">{{project.name}}</h4>
                       <p style="text-align: center;">
                         <i ng-repeat="fa_icon in project.fa_icons" class="fa {{fa_icon}}" style="padding-right: 8px; padding-left: 8px;"></i>
@@ -110,16 +106,14 @@
                       <p class="project-description inner-slide-description tablet" ng-if="project.more_desc" ng-bind-html="project.more_desc | trustHtml"></p>
                       <div class="center" style="margin-top: 8px;">
                         <a class="w-inline-block" ng-if="project.google_play_link" ng-href="{{project.google_play_link}}" target="_blank">
-                          <img ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
+                          <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
                         </a>
                         <div class="w-embed w-iframe github-button" ng-if="project.github_source">
                           <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
                         </div>
                       </div>
-                    </li>
-                  </ul>
+                    </div>
                 </div>
-                <span slider></span>
               </div>
               
               <ul class="high-res" style="padding-left: 24px;">
@@ -128,7 +122,7 @@
                   <p><i ng-repeat="fa_icon in project.fa_icons" style="padding-right: 8px; {{$first ? '' : 'padding-left: 8px;'}}'" class="fa {{fa_icon}}"></i></p>
                   <p class="project-description" ng-bind-html="(project.desc + '<br />' + project.more_desc) | trustHtml"></p>
                   <a class="w-inline-block" ng-href="{{project.google_play_link}}" target="_blank" data-ix="new-interaction-2" ng-if="project.google_play_link">
-                    <img ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
+                    <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
                   </a>
                   <div class="w-embed w-iframe github-button" ng-if="project.github_source">
                     <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
