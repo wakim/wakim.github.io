@@ -100,7 +100,7 @@
       
       <section class="projects card-1">
         <div class="w-row">
-          <div class="w-col w-col-4 w-col-stack">
+          <div class="w-col w-col-stack">
             <h3 id="projects"><i class="fa fa-terminal"></i> {{strings.personal_projects}}</h3>
           </div>
           
@@ -112,8 +112,8 @@
                     <p style="text-align: center;">
                       <i ng-repeat="fa_icon in project.fa_icons" class="fa {{fa_icon}}" style="padding-right: 8px; padding-left: 8px;"></i>
                     </p>
-                    <p class="project-description inner-slide-description phone" ng-bind-html="project.desc | trustHtml"></p>
-                    <p class="project-description inner-slide-description tablet" ng-if="project.more_desc" ng-bind-html="project.more_desc | trustHtml"></p>
+                    <p class="project-description inner-slide-description" ng-bind-html="project.desc | trustHtml"></p>
+                    <p class="project-description inner-slide-description" ng-if="project.more_desc" ng-bind-html="project.more_desc | trustHtml"></p>
                     <div class="center" style="margin-top: 8px;">
                       <a class="w-inline-block" ng-if="project.google_play_link" ng-href="{{project.google_play_link}}" target="_blank">
                         <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">

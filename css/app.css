@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 
 .more {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .language-image {
@@ -14,12 +14,12 @@
 }
 
 .experiences, .interests, .projects, .resume {
-    margin-top: 16px;
-    padding: 16px;
+  margin-top: 16px;
+  padding: 16px;
 }
 
 .interest {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .sub {
@@ -27,25 +27,25 @@
 }
 
 .interval {
-    text-align: right;
+  text-align: right;
 }
 
 .language-image:not(.current) {
-    opacity: 0.5;   
+  opacity: 0.5;   
 }
 
 .social-link {
-    color: #000;
+  color: #000;
 }
 
 .owl-prev {
-    display: inline-block;
-    float: left;
+  display: inline-block;
+  float: left;
 }
 
 .owl-next {
-    display: inline-block;
-    float: right;
+  display: inline-block;
+  float: right;
 }
 
 nav {
@@ -85,6 +85,7 @@ header {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   background: #fff;
+  border-radius: 2px;
 }
 
 .card-1:hover {
@@ -97,7 +98,6 @@ body {
   color: #000;
   font-size: 14px;
   line-height: 20px;
-  text-shadow: rgba(0, 0, 0, 0.29) 0px 1px 0px;
 }
 
 h1 {
@@ -109,7 +109,6 @@ h1 {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-shadow: none;
 }
 
 h2 {
@@ -117,7 +116,6 @@ h2 {
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
-  text-shadow: none;
 }
 
 h3 {
@@ -125,7 +123,6 @@ h3 {
   font-size: 16pt;
   line-height: 30px;
   font-weight: 400;
-  text-shadow: none;
 }
 
 h4 {
@@ -156,30 +153,6 @@ p {
   line-height: 23px;
   font-weight: 300;
   letter-spacing: 0px;
-  text-shadow: none;
-}
-
-.button {
-  display: block;
-  width: 30%;
-  height: 54px;
-  padding: 4px 29px;
-  float: left;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  background-color: #272545;
-  -webkit-transition: background-color 300ms ease;
-  -o-transition: background-color 300ms ease;
-  transition: background-color 300ms ease;
-  color: #000;
-  font-size: 16px;
-  font-weight: 300;
-  text-align: center;
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #414073;
 }
 
 .social-widget-wrapper {
@@ -190,7 +163,6 @@ p {
   font-family:'Roboto', sans-serif;
   font-size: 29pt;
   font-weight: 400;
-  text-shadow: none;
 }
 
 .title-container {
@@ -223,17 +195,6 @@ p {
   margin-right: auto;
   margin-left: auto;
   text-align: justify;
-  text-shadow: none;
-}
-
-.more {
-  display: none;
-  width: 50px;
-  margin-right: auto;
-  margin-left: auto;
-  float: right;
-  text-decoration: underline;
-  text-shadow: none;
 }
 
 .holder {
@@ -261,25 +222,15 @@ p {
   font-family:'Roboto', sans-serif;
   font-size: 15pt;
   font-weight: 400;
-  text-shadow: none;
 }
 
 .project-description {
   margin-bottom: 16px;
   text-align: justify;
-  text-shadow: none;
-}
-
-.project-description.inner-slide-description {
-  text-shadow: none;
 }
 
 .low-res {
   display: none;
-}
-
-.inner-slide, .high-res, .project-header.inner-slide {
-  text-shadow: none;
 }
 
 .language-image {
@@ -297,38 +248,19 @@ p {
 
 .github-button {
   display: inline-block;
-  text-shadow: none;
 }
 
 @media (max-width: 991px) {
-  h1 {
-    text-shadow: none;
-  }
-
   h3 {
     float: none;
-    text-align: center;
-    text-shadow: none;
-  }
-
-  .button {
-    width: 30%;
   }
 
   .main {
     width: 75%;
   }
 
-  .title, .main-p, .more, .inner-slide, .project-header, .project-header.inner-slide, .project-description, .high-res {
-    text-shadow: none;
-  }
-
   .interval {
-      text-align: left;
-  }
-  
-  .interest {
-      text-align: center;
+    text-align: left;
   }
 }
 
@@ -347,56 +279,33 @@ p {
     padding: 18px 4px 18px 4px;
   }
 
-  h1 {
-    text-shadow: none;
-  }
-
   h3 {
     float: none;
-    text-align: center;
-    text-shadow: none;
   }
 
-  p {
-    text-shadow: none;
+  .title {
+    font-size: 24pt;
   }
 
-  .button {
-    width: 40%;
+  .title-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .github-button {
+    display: table-cell;
   }
 
   .social-widget-wrapper {
     text-align: center;
   }
 
-  .title {
-    text-shadow: none;
-  }
-
   .main-p {
     width: 100%;
-    padding-right: 8px;
-    padding-left: 8px;
-    text-shadow: none;
-  }
-
-  .more {
-    display: inline;
-    text-shadow: none;
-  }
-
-  .holder {
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px;
   }
 
   .main {
     width: 95%;
-  }
-
-  .project-header {
-    text-shadow: none;
   }
 
   .project-header.inner-slide {
@@ -404,32 +313,19 @@ p {
     padding-right: 16px;
     padding-left: 16px;
     text-align: center;
-    text-shadow: none;
-  }
-
-  .project-description {
-    text-align: justify;
-    text-shadow: none;
   }
 
   .project-description.inner-slide-description {
     padding-right: 8px;
     padding-left: 8px;
-    text-shadow: none;
   }
 
   .project-description.tablet {
     margin-bottom: 8px;
-    text-shadow: none;
   }
 
   .project-description.phone {
     display: none;
-    text-shadow: none;
-  }
-
-  .project-description.hone {
-    text-shadow: none;
   }
 
   .low-res {
@@ -438,7 +334,6 @@ p {
 
   .high-res {
     display: none;
-    text-shadow: none;
   }
 
   .inner-slide {
@@ -446,30 +341,17 @@ p {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    text-shadow: none;
-  }
-
-  .more-wrapper {
-    display: none;
   }
 
   .center {
-    display: block;
+    display: table;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
   }
-
-  .github-button {
-    text-shadow: none;
-  }
 }
 
 @media (max-width: 479px) {
-  h1, h3, p {
-    text-shadow: none;
-  }
-
   .button {
     width: 100%;
     border-top-left-radius: 2px;
@@ -494,23 +376,14 @@ p {
 
   .main-p {
     width: 100%;
-    padding-right: 8px;
-    padding-left: 8px;
-    text-shadow: none;
-  }
-
-  .title, .more, .github-button, .project-description.inner-slide-description, .project-description, .project-header, .project-header.inner-slide {
-    text-shadow: none;
   }
 
   .project-description.tablet {
     display: none;
-    text-shadow: none;
   }
 
   .project-description.phone {
     display: block;
     margin-bottom: 8px;
-    text-shadow: none;
   }
 }
