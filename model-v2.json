@@ -180,23 +180,25 @@
 	"_strings": {
 		"pt" : {
 			"title": "Wakim Jraige - Site Pessoal",
-			"More": "Mais",
-			"Less": "Menos",
-			"Personal_Projects": "Projetos Pessoais",
+			"more": "Mais",
+			"less": "Menos",
+			"personal_projects": "Projetos pessoais",
 			"google_play_badge_alt": "Medalha Google Play",
 			"google_play_badge_link": "images/pt-br_generic_rgb_wo_45.png",
-			"Some_interests": "Alguns interesses",
-			"Experiences": "Experiências"
+			"some_interests": "Alguns interesses",
+			"experiences": "Experiências",
+			"resume": "Resumo"
 		},
 		"en": {
 			"title": "Wakim Jraige - Web Site",
-			"More": "More",
-			"Less": "Less",
-			"Personal_Projects": "Personal Projects",
+			"more": "More",
+			"less": "Less",
+			"personal_projects": "Personal projects",
 			"google_play_badge_alt": "Google Play Badge",
 			"google_play_badge_link": "images/en_generic_rgb_wo_45.png",
-			"Some_interests": "Some interests",
-			"Experiences": "Experiences"
+			"some_interests": "Some interests",
+			"experiences": "Experiences",
+			"resume": "Resume"
 		}
 	}
 }

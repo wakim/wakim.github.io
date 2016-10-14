@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
 
     <link rel="stylesheet" type="text/css" href="css/webflow.css" /> 
-    <link rel="stylesheet" type="text/css" href="css/wakim-jraige.webflow.css" /> 
     <link rel="stylesheet" type="text/css" href="css/app.css" /> 
     
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
@@ -19,123 +18,133 @@
     <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
   </head>
-  <body ng-controller="main">
-    <div class="header-main-section">
-      <header class="header">
-        <section class="w-container title-container">
-          <img class="title-image" src="images/time-wakim.jpg" alt="Me">
-          <h1 class="title">Wakim Jraige</h1>
-          <a class="w-inline-block here" onclick="return false;">
-            <img width="16" height="11" class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
-          </a>
-          <a class="w-inline-block here" onclick="return false;">
-            <img width="16" height="11" class="language-image en{{currentLang === 'en' ? ' current' : ''}}" ng-click="setLocale('en')" src="images/us.png" alt="Inglês">
-          </a>
-        </section>
-      </header>
-      
-      <noscript>
-        <style type="text/css">
-          .main {
-            display: none;
-          }
-        </style>
-        <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, so visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
-      </noscript>
-      
-      <main class="main card-1" class="ng-cloak">
-        <section class="resume">
-          <p class="main-p w-row" ng-bind-html="resume | trustHtml"></p>
 
-          <div class="w-clearfix holder">
-            <span class="more" ng-click="toggleMore()">{{more}}...</span>
+  <body ng-controller="main">
+    <nav>
+      <ul>
+        <li><a href="#resume">{{strings.resume}}</a></li>
+        <li><a href="#exp">{{strings.experiences}}</a></li>
+        <li><a href="#skills">{{strings.some_interests}}</a></li>
+        <li><a href="#projects">{{strings.personal_projects}}</a></li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <section class="w-container title-container">
+        <img class="title-image" src="images/time-wakim.jpg" alt="Me">
+        <h1 class="title">Wakim Jraige</h1>
+        <a class="w-inline-block here" onclick="return false;">
+          <img width="16" height="11" class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
+        </a>
+        <a class="w-inline-block here" onclick="return false;">
+          <img width="16" height="11" class="language-image en{{currentLang === 'en' ? ' current' : ''}}" ng-click="setLocale('en')" src="images/us.png" alt="Inglês">
+        </a>
+      </section>
+    </header>
+    
+    <noscript>
+      <style type="text/css">
+        .main {
+          display: none;
+        }
+      </style>
+      <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, so visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
+    </noscript>
+    
+    <main class="main" class="ng-cloak">
+      <section class="resume card-1">
+        <div class="w-row">
+          <div class="w-col w-col-stack">
+            <h3 id="resume"><i class="fa fa-user"></i> {{strings.resume}}</h3>
           </div>
-  
-          <section class="experiences more-wrapper" id="more-wrapper">
-            <div class="w-row">
-              <div class="w-col w-col-stack">
-                <h3><i class="fa fa-briefcase"></i> {{strings.Experiences}}</h3>
-              </div>
-            </div>
-            
-            <div class="w-row" ng-repeat="job in jobs">
-              <div class="w-col w-col-stack w-col-8">
-                <h4>{{job.location}}</h4>
-              </div>
-              <div class="w-col w-col-stack w-col-4">
-                <h5 class="interval"><i class="fa fa-calendar" style="margin-right: 8px;"></i>{{job.interval.from}} - {{job.interval.to}}</h5>
-              </div>
-              <div class="w-col w-col-stack">
-                <p class="main-p" style="margin-top: 0px; padding-left: 0px;" ng-bind-html="job.desc | trustHtml"></p>
-              </div>
-            </div>
-          </section>
-        </section>
-  
-        <section class="interests">
-          <div class="w-row">
-            <div class="w-col w-col-stack">
-              <h3><i class="fa fa-code"></i> {{strings.Some_interests}}</h3>
-            </div>
+        </div>
+
+        <p class="main-p w-row" ng-bind-html="resume | trustHtml"></p>
+      </section>
+
+      <section class="experiences card-1">
+        <div class="w-row">
+          <div class="w-col w-col-stack">
+            <h3 id="exp"><i class="fa fa-briefcase"></i> {{strings.experiences}}</h3>
           </div>
-          <div class="w-row">
-            <div ng-repeat="interest in globals.interests" class="w-col w-col-stack w-col-12 interest">
-              {{interest.name}}
-              <span ng-if="interest.sub">
-                (<span ng-repeat="sub in interest.sub" class="sub">{{sub}}{{$last ? '' : ', '}}</span>)
-              </span>
-            </div>
-          </div>
-        </section>
+        </div>
         
-        <section class="projects">
-          <div class="w-row">
-            <div class="w-col w-col-4 w-col-stack">
-              <h3><i class="fa fa-terminal"></i> {{strings.Personal_Projects}}</h3>
-            </div>
-            
-            <div class="w-col w-col-12 w-col-stack">
-              <div class="low-res">
-                <div class="owl-carousel owl-theme">
-                    <div ng-repeat="project in personal_projects">
-                      <h4 class="project-header inner-slide">{{project.name}}</h4>
-                      <p style="text-align: center;">
-                        <i ng-repeat="fa_icon in project.fa_icons" class="fa {{fa_icon}}" style="padding-right: 8px; padding-left: 8px;"></i>
-                      </p>
-                      <p class="project-description inner-slide-description phone" ng-bind-html="project.desc | trustHtml"></p>
-                      <p class="project-description inner-slide-description tablet" ng-if="project.more_desc" ng-bind-html="project.more_desc | trustHtml"></p>
-                      <div class="center" style="margin-top: 8px;">
-                        <a class="w-inline-block" ng-if="project.google_play_link" ng-href="{{project.google_play_link}}" target="_blank">
-                          <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
-                        </a>
-                        <div class="w-embed w-iframe github-button" ng-if="project.github_source">
-                          <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
-                        </div>
+        <div class="w-row" ng-repeat="job in jobs">
+          <div class="w-col w-col-stack w-col-8">
+            <h4>{{job.location}}</h4>
+          </div>
+          <div class="w-col w-col-stack w-col-4">
+            <h5 class="interval"><i class="fa fa-calendar" style="margin-right: 8px;"></i>{{job.interval.from}} - {{job.interval.to}}</h5>
+          </div>
+          <div class="w-col w-col-stack">
+            <p class="main-p" style="margin-top: 0px; padding-left: 0px;" ng-bind-html="job.desc | trustHtml"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interests card-1">
+        <div class="w-row">
+          <div class="w-col w-col-stack">
+            <h3 id="skills"><i class="fa fa-code"></i> {{strings.some_interests}}</h3>
+          </div>
+        </div>
+        <div class="w-row">
+          <div ng-repeat="interest in globals.interests" class="w-col w-col-stack w-col-12 interest">
+            {{interest.name}}
+            <span ng-if="interest.sub">
+              (<span ng-repeat="sub in interest.sub" class="sub">{{sub}}{{$last ? '' : ', '}}</span>)
+            </span>
+          </div>
+        </div>
+      </section>
+      
+      <section class="projects card-1">
+        <div class="w-row">
+          <div class="w-col w-col-4 w-col-stack">
+            <h3 id="projects"><i class="fa fa-terminal"></i> {{strings.personal_projects}}</h3>
+          </div>
+          
+          <div class="w-col w-col-12 w-col-stack">
+            <div class="low-res">
+              <div class="owl-carousel owl-theme">
+                  <div ng-repeat="project in personal_projects">
+                    <h4 class="project-header inner-slide">{{project.name}}</h4>
+                    <p style="text-align: center;">
+                      <i ng-repeat="fa_icon in project.fa_icons" class="fa {{fa_icon}}" style="padding-right: 8px; padding-left: 8px;"></i>
+                    </p>
+                    <p class="project-description inner-slide-description phone" ng-bind-html="project.desc | trustHtml"></p>
+                    <p class="project-description inner-slide-description tablet" ng-if="project.more_desc" ng-bind-html="project.more_desc | trustHtml"></p>
+                    <div class="center" style="margin-top: 8px;">
+                      <a class="w-inline-block" ng-if="project.google_play_link" ng-href="{{project.google_play_link}}" target="_blank">
+                        <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
+                      </a>
+                      <div class="w-embed w-iframe github-button" ng-if="project.github_source">
+                        <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
                       </div>
                     </div>
-                </div>
-              </div>
-              
-              <ul class="high-res" style="padding-left: 24px;">
-                <li ng-repeat="project in personal_projects" style="margin-bottom: 16px;">
-                  <h4 class="project-header">{{project.name}}</h4>
-                  <p><i ng-repeat="fa_icon in project.fa_icons" style="padding-right: 8px; {{$first ? '' : 'padding-left: 8px;'}}'" class="fa {{fa_icon}}"></i></p>
-                  <p class="project-description" ng-bind-html="(project.desc + '<br />' + project.more_desc) | trustHtml"></p>
-                  <a class="w-inline-block" ng-href="{{project.google_play_link}}" target="_blank" data-ix="new-interaction-2" ng-if="project.google_play_link">
-                    <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
-                  </a>
-                  <div class="w-embed w-iframe github-button" ng-if="project.github_source">
-                    <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
                   </div>
-                </li>
-              </ul>
+              </div>
             </div>
+            
+            <ul class="high-res" style="padding-left: 0px; list-style-type: none;">
+              <li ng-repeat="project in personal_projects" style="margin-bottom: 16px;">
+                <h4 class="project-header">{{project.name}}</h4>
+                <p><i ng-repeat="fa_icon in project.fa_icons" style="padding-right: 8px; {{$first ? '' : 'padding-left: 8px;'}}'" class="fa {{fa_icon}}"></i></p>
+                <p class="project-description" ng-bind-html="(project.desc + '<br />' + project.more_desc) | trustHtml"></p>
+                <a class="w-inline-block" ng-href="{{project.google_play_link}}" target="_blank" data-ix="new-interaction-2" ng-if="project.google_play_link">
+                  <img width="130" height="45" ng-src="{{strings.google_play_badge_link}}" alt="{{strings.google_play_badge_alt}}">
+                </a>
+                <div class="w-embed w-iframe github-button" ng-if="project.github_source">
+                  <iframe ng-src="{{project.github_source | trustUrl}}" height="30" width="100" frameborder="0" scrolling="0" style="width:100px; position: relative;top: 10px;height: 30px;" allowTransparency="true"></iframe>
+                </div>
+              </li>
+            </ul>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
     
-    <footer class="footer-section">
+    <footer>
       <div class="w-container">
         <div class="w-row">
           <div class="social-widget-wrapper">

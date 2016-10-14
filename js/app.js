@@ -72,11 +72,33 @@
 })(angular);
 
 (function($, undefined) {
-    $('a:not(.here)').on('click',
+    var $currentAnimation;
+
+    $('a').on('click',
         function(e) {
-            var url = this.getAttribute('href');
-            if(url !== '#') {
+            var url = this.getAttribute('href') || '';
+
+            if (url === '') {
+                return;
+            }
+
+            if(url[0] !== '#') {
                 window.open(url, '_blank');
+            } else {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                
+                if (target.length) {
+                    if ($currentAnimation) {
+                        $currentAnimation.stop(false, true);
+                    }
+
+                    $currentAnimation = $('html, body').animate({
+                        scrollTop: target.offset().top - 72
+                    }, 1000);
+
+                    return false;
+                }
             }
         }
     );
@@ -84,5 +106,19 @@
     $(function() {
         var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
         $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));
+
+        var bar = $('nav').get(0);
+
+        window.addEventListener("scroll", function(event) {
+            var top = this.scrollY;
+  
+            bar.style.boxShadow = 0;
+
+            if (top >= 50) {
+                bar.style.boxShadow = "0 2px 5px 0 rgba(0, 0, 0, 0.26)";
+            } else {
+                bar.style.boxShadow = "0 0 0 0 transparent";
+            }
+        }, false);
     });
 })(jQuery);
