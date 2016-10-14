@@ -68,14 +68,14 @@
                                 "desc": "Evolução do Agile Planning Poker, que utiliza a plataforma Play Games® da Google® para permitir a integração e comunicação entre os participantes de Planning Poker em Equipes Distribuídas.",
                                 "more_desc": "O aplicativo facilita a realização de sessões de Planning Poker de equipes distribuídas, não importanto a localização dos membros, fornecendo acompanhamento para as etapas de um rodada de votação, incluído um espaço para discussão de ideias.",
                                 "fa_icons": ["fa-android", "fa-mobile", "fa-users", "fa-google-plus", "fa-gamepad"],
-                                "google_play_link": "https://play.google.com/store/apps/details?idbr.com.planning.poker.multiplayer"
+                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer"
                             },
 
                             {
                                 "name": "Wear Planning Poker",
                                 "desc": "O aplicativo fornece uma série de baralhos para sessões de Planning Poker, adaptado a plataforma Wearable.<br />Na presença do dispositivo com Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).",
                                 "more_desc": "Se integra opcionalmente com o dispositivo móvel (Smartphone ou Tablet) para sincronização de dados.",
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer",
+                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
                                 "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
                                 "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=wearable-planning-poker&type=fork&count=false&size=large"
                             }
@@ -157,7 +157,7 @@
                                 "desc": "This app provides a set of decks for Planning Poker sessions, adapted to Wearable Platform.<br />Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state (colors and selection).",
                                 "more_desc": "Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state.",
                                 "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer",
+                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
                                 "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=wearable-planning-poker&type=fork&count=false&size=large"
                             }
                         ]
