@@ -204,18 +204,45 @@
                     }
                 };
 
+    var resourcesToLoad = [
+        {
+            "max-width": 767,
+            "js": "bower_components/owl.carousel/dist/owl.carousel.min.js",
+            "css": "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
+            "callback": function () {
+                $('.owl-carousel').owlCarousel(
+                    {
+                        loop:true,
+                        items: 1,
+                        nav: true,
+                        dots: true,
+                        autoplay: true,
+                        autoplayHoverPause: true
+                    }
+                );
+            }
+        }
+    ];
+
+    function loadResourcesForCurrentMediaQuery() {
+        var $head = $("head");
+
+        for (index in resourcesToLoad) {
+            var resource = resourcesToLoad[index];
+            var mq  = window.matchMedia("(max-width: " + resource["max-width"] + "px)");
+
+            if (mq.matches) {
+                $head.append($('<link rel="stylesheet" type="text/css" />').attr('href', resource.css));
+                jQuery.getScript(resource.js, resource.callback);
+            }
+        }
+    }
+
     var app = angular.module('root', []);
     
-    function buildEmptyModel() {
-        return {title: '', resume: [], jobs: [], personal_projects: [], interests: []};
-    }
-    
     app.controller('main', ['$scope', '$http', '$sce', '$timeout', "localStorage", function($scope, $http, $sce, $timeout, localStorageService){
-        angular.extend($scope, buildEmptyModel());
         
         $scope.strings = {};
-        $scope.moreState = 'More';
-        $scope.more = '';
         $scope.currentLang = '';
         
         $scope.setLocale = function(newLang) {
@@ -235,29 +262,8 @@
             $scope.setLocale(localStorageService.getItem('lang') || 'pt');
 
             $timeout(function() {
-                $('.owl-carousel').owlCarousel(
-                    {
-                        loop:true,
-                        items: 1,
-                        nav: true,
-                        dots: true,
-                        autoplay: true,
-                        autoplayHoverPause: true
-                    }
-                );
+                loadResourcesForCurrentMediaQuery();
             }, 1);
-        };
-        
-        $scope.toggleMore = function() {
-            if($scope.moreState === 'More') {
-                $scope.moreState = 'Less';
-            } else {
-                $scope.moreState = 'More';
-            }
-            
-            $scope.more = $scope.strings[$scope.moreState];
-            
-            angular.element('#more-wrapper').slideToggle();
         };
         
         $scope.setModel(model);
