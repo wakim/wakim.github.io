@@ -35,6 +35,15 @@
     <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
   </head>
 
+  <noscript>
+    <style type="text/css">
+      .main {
+        display: none;
+      }
+    </style>
+    <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
+  </noscript>
+
   <body ng-controller="main">
     <nav>
       <ul>
@@ -44,6 +53,11 @@
         <li><a href="#projects">{{strings.personal_projects}}</a></li>
       </ul>
     </nav>
+
+    <div class="toolbar low-res">
+      <span class="menu ssm-toggle-nav">
+      </span>
+    </div>
 
     <header class="header">
       <section class="w-container title-container">
@@ -57,15 +71,6 @@
         </a>
       </section>
     </header>
-    
-    <noscript>
-      <style type="text/css">
-        .main {
-          display: none;
-        }
-      </style>
-      <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, so visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
-    </noscript>
     
     <main class="main" class="ng-cloak">
       <section class="resume card-1">
@@ -183,7 +188,21 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="js/app.js?v=2"></script>
+    
+    <div class="ssm-overlay ssm-toggle-nav low-res"></div>
+
+    <script>
+      var mq = window.matchMedia("(max-width: 479px)");
+
+      if (mq.matches) {
+        document.write('<script type="text/javascript" src="bower_components/slide-and-swipe-menu/jquery.slideandswipe.min.js"><\/script>');
+        document.write('<script type="text/javascript" src="bower_components/jquery-touchswipe/jquery.touchSwipe.min.js"><\/script>');
+
+        document.write('<script type="text/javascript" src="bower_components/owl.carousel/dist/owl.carousel.min.js"><\/script>');
+        document.write('<link type="text/css" rel="stylesheet" href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />');
+      }
+    </script>
+    <script type="text/javascript" src="js/app.js?v=4"></script>
     <script type="text/javascript" src="js/services.js"></script>
     <script type="text/javascript">
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

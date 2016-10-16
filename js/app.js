@@ -204,40 +204,6 @@
                     }
                 };
 
-    var resourcesToLoad = [
-        {
-            "max-width": 767,
-            "js": "bower_components/owl.carousel/dist/owl.carousel.min.js",
-            "css": "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
-            "callback": function () {
-                $('.owl-carousel').owlCarousel(
-                    {
-                        loop:true,
-                        items: 1,
-                        nav: true,
-                        dots: true,
-                        autoplay: true,
-                        autoplayHoverPause: true
-                    }
-                );
-            }
-        }
-    ];
-
-    function loadResourcesForCurrentMediaQuery() {
-        var $head = $("head");
-
-        for (index in resourcesToLoad) {
-            var resource = resourcesToLoad[index];
-            var mq  = window.matchMedia("(max-width: " + resource["max-width"] + "px)");
-
-            if (mq.matches) {
-                $head.append($('<link rel="stylesheet" type="text/css" />').attr('href', resource.css));
-                jQuery.getScript(resource.js, resource.callback);
-            }
-        }
-    }
-
     var app = angular.module('root', []);
     
     app.controller('main', ['$scope', '$http', '$sce', '$timeout', "localStorage", function($scope, $http, $sce, $timeout, localStorageService){
@@ -260,13 +226,31 @@
             $scope.globals = data.globals;
             
             $scope.setLocale(localStorageService.getItem('lang') || 'pt');
-
-            $timeout(function() {
-                loadResourcesForCurrentMediaQuery();
-            }, 1);
         };
         
         $scope.setModel(model);
+
+        $timeout(function() {
+                var mq = window.matchMedia("(max-width: 479px)");
+
+                if (mq.matches) {
+                  $('nav').slideAndSwipe();
+                  $('nav a').click(function(e) {
+                      setTimeout(function() {$('.ssm-overlay').trigger('click');}, 1);
+                  });
+
+                  $('.owl-carousel').owlCarousel(
+                      {
+                          loop:true,
+                          items: 1,
+                          nav: true,
+                          dots: true,
+                          autoplay: true,
+                          autoplayHoverPause: true
+                      }
+                  );
+                }
+            }, 1);
     }]);
 
     app.filter('trustHtml', ['$sce', function($sce) {
@@ -318,17 +302,17 @@
         var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
         $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));
 
-        var bar = $('nav').get(0);
+        var $bar = $('nav, .toolbar');
 
         window.addEventListener("scroll", function(event) {
             var top = this.scrollY;
-  
-            bar.style.boxShadow = 0;
+
+            $bar.css('boxShadow', 0);
 
             if (top >= 50) {
-                bar.style.boxShadow = "0 2px 5px 0 rgba(0, 0, 0, 0.26)";
+                $bar.css('boxShadow', "0 2px 5px 0 rgba(0, 0, 0, 0.26)");
             } else {
-                bar.style.boxShadow = "0 0 0 0 transparent";
+                $bar.css('boxShadow', "0 0 0 0 transparent");
             }
         }, false);
     });
