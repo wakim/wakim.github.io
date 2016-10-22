@@ -205,11 +205,12 @@
                 };
 
     var app = angular.module('root', []);
-    
+
     app.controller('main', ['$scope', '$http', '$sce', '$timeout', "localStorage", function($scope, $http, $sce, $timeout, localStorageService){
         
         $scope.strings = {};
         $scope.currentLang = '';
+        $scope.projectsLoaded = false;
         
         $scope.setLocale = function(newLang) {
             angular.extend($scope, $scope.model[newLang]);
@@ -217,8 +218,31 @@
             
             $scope.currentLang = newLang;
             $scope.more = $scope.strings[$scope.moreState];
+            $scope.initCarousel();
             
             localStorageService.setItem('lang', newLang);
+        };
+
+        $scope.initCarousel = function() {
+            if (!$scope.projectsLoaded) return;
+
+            $scope.owl && $scope.owl.destroy();
+
+            $timeout(function() {
+                var $carousel = $('.owl-carousel');
+                $carousel.owlCarousel(
+                          {
+                              loop:true,
+                              items: 1,
+                              nav: true,
+                              dots: true,
+                              autoplay: true,
+                              autoplayHoverPause: true
+                          }
+                      );
+
+                $scope.owl = $carousel.data('owl.carousel');
+            }, 1);
         };
         
         $scope.setModel = function(data) {
@@ -227,7 +251,7 @@
             
             $scope.setLocale(localStorageService.getItem('lang') || 'pt');
         };
-        
+
         $scope.setModel(model);
 
         $timeout(function() {
@@ -235,20 +259,13 @@
 
                 if (mq.matches) {
                   $('nav').slideAndSwipe();
+
                   $('nav a').click(function(e) {
                       setTimeout(function() {$('.ssm-overlay').trigger('click');}, 1);
                   });
 
-                  $('.owl-carousel').owlCarousel(
-                      {
-                          loop:true,
-                          items: 1,
-                          nav: true,
-                          dots: true,
-                          autoplay: true,
-                          autoplayHoverPause: true
-                      }
-                  );
+                  $scope.projectsLoaded = true;
+                  $scope.initCarousel();
                 }
             }, 1);
     }]);
@@ -309,7 +326,7 @@
 
             $bar.css('boxShadow', 0);
 
-            if (top >= 50) {
+            if (top > 0) {
                 $bar.css('boxShadow', "0 2px 5px 0 rgba(0, 0, 0, 0.26)");
             } else {
                 $bar.css('boxShadow', "0 0 0 0 transparent");
