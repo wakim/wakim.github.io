@@ -11,7 +11,7 @@
                                     "to": "atual"
                                 }
                             },
-                            
+
                             {
                                 "location": "Stefanini",
                                 "desc": "Atuei como Analista Desenvolvedor Java, na Stefanini, em um projeto do Fundo de Garantia da Caixa Econômica Federal.<br /><br />Utilizando a plataforma Java EE (com EJB, JSF, JPA) em uma arquitetura modular com servidor de aplicação JBoss 6.3 EAP. Com uma grande integração com Banco de Dados DB2 no Back-end. Um front-end com Bootstrap, CSS e Javascript.",
@@ -20,7 +20,7 @@
                                     "to": "05/2015"
                                 }
                             },
-                            
+
                             {
                                 "location": "GPE (ScrumHalf)",
                                 "desc": "Minha segunda experiência em Web foi como integrante de uma equipe de desenvolvimento Scrum. Trabalhei no desenvolvimento e manutenção do ScrumHalf.<br /><br />Utilizando Java EE (usando EJB, JSF e JPA) com servidor de aplicação JBoss 6 e 7 e banco de dados MySQL no back-end. HTML, JavaScript (MVVM usando KnockoutJS) e CSS no front-end. Com realização de testes automatizados com JUnit, Selenium e DBUnit.",
@@ -29,7 +29,7 @@
                                     "to": "07/2014"
                                 }
                             },
-                            
+
                             {
                                 "location": "COPPETEC",
                                 "desc": "Comecei na área de desenvolvimento WEB com manutenção e desenvolvimento de aplicações Web.<br /><br />Utilizando parte do Java EE (usando JSP, Servlets e JDBC) com Container de Servlets Tomcat e banco de dados SQL Server no back-end. HTML, JavaScript e CSS no front-end.",
@@ -92,7 +92,7 @@
                                     "to": "actual"
                                 }
                             },
-                            
+
                             {
                                 "location": "Stefanini",
                                 "desc": "I was a Java Development Analyst, in Stefanini, on a Guarantee Fund Project of Caixa Econômica Federal.<br /><br />Using Java EE platform (with EJB, JSF, JPA) with a modular architecture running on JBoss 6.3 EAP application server. With highly integration with DB2 database in back-end. In front-end, Bootstrap, CSS and Javascript.",
@@ -101,7 +101,7 @@
                                     "to": "05-2014"
                                 }
                             },
-                            
+
                             {
                                 "location": "GPE (ScrumHalf)",
                                 "desc": "My Second experience on Web as part of a Scrum Team. Worked on ScrumHalf on development and maintenance.<br /><br />Using the complete Java EE (using EJB, JSF and JPA) with JBoss 6 and 7 as Application Server and MySQL in back-end. HTML, JavaScript (MVVM using KnockoutJS) and CSS in the front-end. With automated tests using Selenium, JUnit and DBUnit.",
@@ -110,7 +110,7 @@
                                     "to": "07-2014"
                                 }
                             },
-                            
+
                             {
                                 "location": "COPPETEC",
                                 "desc": "Started on Web Development area with development and maintenance of an web applications.<br /><br />Using part of Java EE (using JSP, Servlets and JDBC) with Tomcat as Servlet Container and SQL Server in the back-end and HTML, JavaScript and CSS in the front-end.",
@@ -162,7 +162,7 @@
                             }
                         ]
                     },
-                     
+
                     "globals": {
                         "interests": [
                             {"name": "Android", "sub": ["MVP", "Dagger", "RxJava", "Tests", "Kotlin", "Material Design"]},
@@ -177,7 +177,7 @@
                             {"name": "iOS", "sub": ["Objective-C"]}
                         ]
                     },
-                     
+
                     "_strings": {
                         "pt" : {
                             "title": "Wakim Jraige - Site Pessoal",
@@ -207,19 +207,19 @@
     var app = angular.module('root', []);
 
     app.controller('main', ['$scope', '$http', '$sce', '$timeout', "localStorage", function($scope, $http, $sce, $timeout, localStorageService){
-        
+
         $scope.strings = {};
         $scope.currentLang = '';
         $scope.projectsLoaded = false;
-        
+
         $scope.setLocale = function(newLang) {
             angular.extend($scope, $scope.model[newLang]);
             angular.extend($scope.strings, $scope.model._strings[newLang]);
-            
+
             $scope.currentLang = newLang;
             $scope.more = $scope.strings[$scope.moreState];
             $scope.initCarousel();
-            
+
             localStorageService.setItem('lang', newLang);
         };
 
@@ -244,18 +244,18 @@
                 $scope.owl = $carousel.data('owl.carousel');
             }, 1);
         };
-        
+
         $scope.setModel = function(data) {
             $scope.model = data;
             $scope.globals = data.globals;
-            
+
             $scope.setLocale(localStorageService.getItem('lang') || 'pt');
         };
 
         $scope.setModel(model);
 
         $timeout(function() {
-                var mq = window.matchMedia("(max-width: 479px)");
+                var mq = window.matchMedia("(max-width: 767px)");
 
                 if (mq.matches) {
                   $('nav').slideAndSwipe();
@@ -299,7 +299,7 @@
             } else {
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                
+
                 if (target.length) {
                     if ($currentAnimation) {
                         $currentAnimation.stop(false, true);
@@ -314,7 +314,7 @@
             }
         }
     );
-    
+
     $(function() {
         var mail = ['.com', 'gmail', '@', '.jraige', 'wakim'];
         $('#mail').attr('href', 'mailto:'.concat(mail.reverse().join('')));

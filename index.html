@@ -19,18 +19,18 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.wakimjraige.com" />
     <meta property="og:image" content="http://www.wakimjraige.com/images/time-wakim.jpg" />
-    <meta property="og:description" content="Site pessoal de Wakim Jraige. Desenvolvedor Android e Web." /> 
+    <meta property="og:description" content="Site pessoal de Wakim Jraige. Desenvolvedor Android e Web." />
     <meta property="og:site_name" content="Site pessoal de Wakim Jraige" />
     <meta property="fb:admins" content="10150979369546009" />
-    
+
     <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="css/webflow-min.css" /> 
-    <link rel="stylesheet" type="text/css" href="css/app-min.css" /> 
-    
+    <link rel="stylesheet" type="text/css" href="css/webflow-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/app-min.css" />
+
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    
+
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
   </head>
@@ -71,7 +71,7 @@
         </a>
       </section>
     </header>
-    
+
     <main class="main" class="ng-cloak">
       <section class="resume card-1">
         <div class="w-row">
@@ -89,7 +89,7 @@
             <h3 id="exp"><i class="fa fa-briefcase"></i> {{strings.experiences}}</h3>
           </div>
         </div>
-        
+
         <div class="w-row" ng-repeat="job in jobs">
           <div class="w-col w-col-stack w-col-8">
             <h4>{{job.location}}</h4>
@@ -118,13 +118,13 @@
           </div>
         </div>
       </section>
-      
+
       <section class="projects card-1">
         <div class="w-row">
           <div class="w-col w-col-stack">
             <h3 id="projects"><i class="fa fa-terminal"></i> {{strings.personal_projects}}</h3>
           </div>
-          
+
           <div class="w-col w-col-12 w-col-stack">
             <div class="low-res">
               <div class="owl-carousel owl-theme">
@@ -146,7 +146,7 @@
                   </div>
               </div>
             </div>
-            
+
             <ul class="high-res" style="padding-left: 0px; list-style-type: none;">
               <li ng-repeat="project in personal_projects" style="margin-bottom: 16px;">
                 <h4 class="project-header">{{project.name}}</h4>
@@ -164,7 +164,7 @@
         </div>
       </section>
     </main>
-    
+
     <footer>
       <div class="w-container">
         <div class="w-row">
@@ -188,11 +188,11 @@
         </div>
       </div>
     </footer>
-    
+
     <div class="ssm-overlay ssm-toggle-nav low-res"></div>
 
     <script>
-      var mq = window.matchMedia("(max-width: 479px)");
+      var mq = window.matchMedia("(max-width: 767px)");
 
       if (mq.matches) {
         document.write('<script type="text/javascript" src="bower_components/slide-and-swipe-menu/jquery.slideandswipe.min.js"><\/script>');

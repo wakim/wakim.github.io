@@ -27,7 +27,7 @@
 }
 
 .language-image:not(.current) {
-  opacity: 0.5;   
+  opacity: 0.5;
 }
 
 .social-link {
@@ -42,6 +42,8 @@ nav, .toolbar {
   z-index: 2;
   top: 0;
   width: 100%;
+  transform: none;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 nav ul {
@@ -345,6 +347,68 @@ p {
     margin-left: auto;
     text-align: center;
   }
+
+  .toolbar {
+    display: table;
+  }
+
+  .toolbar .menu {
+    color: white;
+    font-size: 28px;
+    padding-left: 16px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .toolbar .menu:before {
+    content:'\2630';
+  }
+
+  nav ul li {
+    display: block;
+    text-align: left;
+    padding: 0px;
+  }
+
+  nav ul li a {
+    color: #000;
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* navigation */
+  nav {
+    height: 100%;
+    width: 280px;
+    margin-top: 56px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: visible;
+    transform: translate(-280px,0);
+  }
+
+  /* overlay layer */
+  .ssm-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+  }
+
+  /* prevent scroll when nav is open */
+  .is-navOpen {
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 479px) {
@@ -381,65 +445,5 @@ p {
   .project-description.phone {
     display: block;
     margin-bottom: 8px;
-  }
-
-  .toolbar {
-    display: table;
-  }
-
-  .toolbar .menu {
-    color: white;
-    font-size: 28px;
-    padding-left: 16px;
-    display: table-cell;
-    vertical-align: middle;
-  }
-
-  .toolbar .menu:before { content:'\2630'; }
-
-  nav ul li {
-    display: block;
-    text-align: left;
-    padding: 0px;
-  }
-
-  nav ul li a {
-    color: #000;
-    display: inline-block;
-    width: 100%;
-    padding: 16px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  /* navigation */
-  nav {
-      height: 100%;
-      width: 280px;
-      margin-top: 56px;
-      background-color: #fff;
-      left: 0;
-      top: 0;
-      z-index: 2;
-      position: fixed;
-      overflow-y: auto;
-      overflow-x: visible;
-      transform: translate(-280px,0);
-  }
-
-  /* overlay layer */
-  .ssm-overlay {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0,0,0,0.2);
-      display: none;
-      z-index: 1;
-  }
-
-  /* prevent scroll when nav is open */
-  .is-navOpen {
-    overflow: hidden;
   }
 }
