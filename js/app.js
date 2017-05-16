@@ -42,6 +42,13 @@
 
                         "personal_projects": [
                             {
+                                "name": "Kotlin MVP Starter",
+                                "desc": "Pequeno projeto demonstrando a arquitetura MVP no Android.",
+                                "more_desc": "O objetivo principal é fornecer um guia para novos projetos, seguindo a arquitetura MVP com Dagger2, RxJava, Kotlin e Unit Tests.",
+                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=kotlin-mvp-starter&type=fork&count=false&size=large",
+                                "fa_icons": ["fa-android", "fa-mobile"]
+                            },
+                            {
                                 "name": "ESL Pod Client",
                                 "desc": "Pequeno projeto de um player mobile Android para podcasts do site English as Second Language.",
                                 "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin.",
@@ -122,6 +129,13 @@
                         ],
 
                         "personal_projects": [
+                            {
+                                "name": "Kotlin MVP Starter",
+                                "desc": "Small project demonstrating the MVP architecture for Android.",
+                                "more_desc": "The main goal is to provide a prototype for new Android projects. Using MVP architecture with Dagger2, RxJava, Kotlin and Unit Tests.",
+                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=kotlin-mvp-starter&type=fork&count=false&size=large",
+                                "fa_icons": ["fa-android", "fa-mobile"]
+                            },
                             {
                                 "name": "ESL Pod Client",
                                 "desc": "Project of a small mobile player for English as Second Language website podcasts for Android platform.",
