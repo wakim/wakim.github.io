@@ -9,11 +9,6 @@
 	font-weight: 500;
 }
 
-.experiences, .interests, .projects, .resume {
-  margin-top: 16px;
-  padding: 16px;
-}
-
 .interest {
   margin-top: 8px;
 }
@@ -65,19 +60,26 @@ nav li a {
   font-family:'Roboto', sans-serif;
 }
 
-header {
-  margin-top: 64px;
-}
-
 .card-1 {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   background: #fff;
   border-radius: 2px;
+  padding: 32px;
+}
+
+.card-1:not(:first) {
+  margin-top: 16px;
+}
+
+.card-header {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
 }
 
 .card-1:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
 body {
@@ -89,7 +91,6 @@ body {
 }
 
 h1 {
-  margin: 10px 0px 16px;
   font-family: 'Roboto', sans-serif;
   font-size: 39px;
   line-height: 44px;
@@ -100,42 +101,36 @@ h1 {
 }
 
 h2 {
-  margin: 10px 0px;
   font-size: 32px;
   line-height: 36px;
   font-weight: 500;
 }
 
 h3 {
-  margin: 5px 0px;
   font-size: 16pt;
   line-height: 30px;
   font-weight: 400;
 }
 
 h4 {
-  margin: 10px 0px;
   font-size: 14pt;
   line-height: 24px;
   font-weight: 500;
 }
 
 h5 {
-  margin: 10px 0px;
   font-size: 11pt;
   line-height: 20px;
   font-weight: 500;
 }
 
 h6 {
-  margin: 10px 0px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
 }
 
 p {
-  margin-bottom: 5px;
   font-family:'Roboto', sans-serif;
   font-size: 12pt;
   line-height: 23px;
@@ -143,26 +138,31 @@ p {
   letter-spacing: 0px;
 }
 
-.social-widget-wrapper {
-  text-align: center;
-}
-
 .title {
   font-family:'Roboto', sans-serif;
-  font-size: 29pt;
+  font-size: 24pt;
   font-weight: 400;
+  text-align: center;
 }
 
-.title-container {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.sub-title {
   text-align: center;
+  margin-bottom: 32px;
+}
+
+.contacts-container {
+  display: inline-block;
+}
+
+.language-container {
+  float: right;
+  display: inline-block;
+  text-align: right;
 }
 
 .title-image {
   display: block;
-  margin-top: 10px;
+  margin-top: -92px;
   margin-right: auto;
   margin-left: auto;
   border: 2px solid white;
@@ -173,7 +173,7 @@ p {
 }
 
 .main {
-  margin-top: 16px;
+  margin-top: 120px;
   margin-bottom: 16px;
 }
 
@@ -206,6 +206,10 @@ p {
   margin-left: auto;
 }
 
+.personal-project:not(:last-child) {
+  margin-bottom: 48px;
+}
+
 .project-header {
   font-family:'Roboto', sans-serif;
   font-size: 15pt;
@@ -213,8 +217,8 @@ p {
 }
 
 .project-description {
-  margin-bottom: 16px;
   text-align: justify;
+  margin-bottom: 8px;
 }
 
 .low-res {
@@ -236,6 +240,18 @@ p {
 
 .github-button {
   display: inline-block;
+}
+
+.job-container:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.activities-header {
+  margin-top: 16px;
+}
+
+.activities {
+  margin-top: 8px;
 }
 
 @media (max-width: 991px) {
@@ -282,20 +298,17 @@ p {
   }
 
   .title {
-    font-size: 24pt;
+    font-size: 21pt;
   }
 
   .title-image {
+    margin-top: -72px;
     width: 80px;
     height: 80px;
   }
 
   .github-button {
     display: table-cell;
-  }
-
-  .social-widget-wrapper {
-    text-align: center;
   }
 
   .main-p {
@@ -316,10 +329,6 @@ p {
   .project-description.inner-slide-description {
     padding-right: 8px;
     padding-left: 8px;
-  }
-
-  .project-description.tablet {
-    margin-bottom: 8px;
   }
 
   .project-description.phone {
@@ -422,7 +431,6 @@ p {
     display: block;
     width: 194px;
     margin-right: auto;
-    margin-bottom: 15px;
     margin-left: auto;
   }
 
@@ -444,6 +452,5 @@ p {
 
   .project-description.phone {
     display: block;
-    margin-bottom: 8px;
   }
 }

@@ -59,10 +59,30 @@
       </span>
     </div>
 
-    <header class="header">
-      <section class="w-container title-container">
-        <img class="title-image" src="images/time-wakim.jpg" alt="Me">
-        <h1 class="title">Wakim Jraige</h1>
+    <main class="main" class="ng-cloak">
+      <section class="w-container contacts-container">
+        <div class="w-row">
+          <div class="social-widget-wrapper">
+            <a class="w-inline-block social-link here" href="#" id="mail">
+              <i class="fa fa-fw fa-envelope-o"></i>
+            </a>
+            <a class="w-inline-block social-link" href="https://plus.google.com/+WakimJraige" target="_blank">
+              <i class="fa fa-google-plus"></i>
+            </a>
+            <a class="w-inline-block social-link" href="http://br.linkedin.com/in/wakimjraige" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="w-inline-block social-link" href="http://pt.stackoverflow.com/users/6436/wakim" target="_blank">
+              <i class="fa fa-stack-overflow"></i>
+            </a>
+            <a class="w-inline-block social-link" href="https://github.com/wakim" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-container language-container">
         <a class="w-inline-block here" onclick="return false;">
           <img width="16" height="11" class="language-image pt-br{{currentLang === 'pt' ? ' current' : ''}}" ng-click="setLocale('pt')" src="images/br.png" alt="Português do Brasil">
         </a>
@@ -70,45 +90,46 @@
           <img width="16" height="11" class="language-image en{{currentLang === 'en' ? ' current' : ''}}" ng-click="setLocale('en')" src="images/us.png" alt="Inglês">
         </a>
       </section>
-    </header>
 
-    <main class="main" class="ng-cloak">
       <section class="resume card-1">
-        <div class="w-row">
-          <div class="w-col w-col-stack">
-            <h3 id="resume"><i class="fa fa-user"></i> {{strings.resume}}</h3>
-          </div>
-        </div>
-
+        <img class="title-image" src="images/time-wakim.jpg" alt="Me" />
+        <h1 class="title">Wakim Jraige</h1>
+        <p class="sub-title w-row" ng-bind-html="school | trustHtml"></p>
         <p class="main-p w-row" ng-bind-html="resume | trustHtml"></p>
       </section>
 
-      <section class="experiences card-1">
-        <div class="w-row">
-          <div class="w-col w-col-stack">
-            <h3 id="exp"><i class="fa fa-briefcase"></i> {{strings.experiences}}</h3>
-          </div>
+      <div class="w-row card-header">
+        <div class="w-col w-col-stack">
+          <h3 id="exp"><i class="fa fa-briefcase"></i> {{strings.experiences}}</h3>
         </div>
+      </div>
 
-        <div class="w-row" ng-repeat="job in jobs">
+      <section class="experiences card-1">
+        <div class="w-row job-container" ng-repeat="job in jobs">
           <div class="w-col w-col-stack w-col-8">
             <h4>{{job.location}}</h4>
           </div>
           <div class="w-col w-col-stack w-col-4">
-            <h5 class="interval"><i class="fa fa-calendar" style="margin-right: 8px;"></i>{{job.interval.from}} - {{job.interval.to}}</h5>
+            <h5 class="interval"><i class="fa fa-calendar" style="margin-right: 8px;"></i>{{job.interval}}</h5>
           </div>
           <div class="w-col w-col-stack">
             <p class="main-p" style="margin-top: 0px; padding-left: 0px;" ng-bind-html="job.desc | trustHtml"></p>
           </div>
+          <div class="w-col w-col-stack">
+            <h5 class="activities-header">{{strings.main_activities}}</h5>
+            <ul class="activities">
+              <li ng-repeat="activity in job.activities">{{activity}}</li>
+            </ul>
         </div>
       </section>
 
-      <section class="interests card-1">
-        <div class="w-row">
-          <div class="w-col w-col-stack">
-            <h3 id="skills"><i class="fa fa-code"></i> {{strings.some_interests}}</h3>
-          </div>
+      <div class="w-row card-header">
+        <div class="w-col w-col-stack">
+          <h3 id="skills"><i class="fa fa-code"></i> {{strings.some_interests}}</h3>
         </div>
+      </div>
+
+      <section class="interests card-1">
         <div class="w-row">
           <div ng-repeat="interest in globals.interests" class="w-col w-col-stack w-col-12 interest">
             {{interest.name}}
@@ -119,12 +140,14 @@
         </div>
       </section>
 
+      <div class="w-row card-header">
+        <div class="w-col w-col-stack">
+          <h3 id="projects"><i class="fa fa-terminal"></i> {{strings.personal_projects}}</h3>
+        </div>
+      </div>
+
       <section class="projects card-1">
         <div class="w-row">
-          <div class="w-col w-col-stack">
-            <h3 id="projects"><i class="fa fa-terminal"></i> {{strings.personal_projects}}</h3>
-          </div>
-
           <div class="w-col w-col-12 w-col-stack">
             <div class="low-res">
               <div class="owl-carousel owl-theme">
@@ -148,7 +171,7 @@
             </div>
 
             <ul class="high-res" style="padding-left: 0px; list-style-type: none;">
-              <li ng-repeat="project in personal_projects" style="margin-bottom: 16px;">
+              <li class="personal-project" ng-repeat="project in personal_projects">
                 <h4 class="project-header">{{project.name}}</h4>
                 <p><i ng-repeat="fa_icon in project.fa_icons" style="padding-right: 8px; {{$first ? '' : 'padding-left: 8px;'}}'" class="fa {{fa_icon}}"></i></p>
                 <p class="project-description" ng-bind-html="(project.desc + '<br />' + project.more_desc) | trustHtml"></p>
@@ -164,30 +187,6 @@
         </div>
       </section>
     </main>
-
-    <footer>
-      <div class="w-container">
-        <div class="w-row">
-          <div class="social-widget-wrapper">
-            <a class="w-inline-block social-link here" href="#" id="mail">
-              <i class="fa fa-fw fa-envelope-o"></i>
-            </a>
-            <a class="w-inline-block social-link" href="https://plus.google.com/+WakimJraige" target="_blank">
-              <i class="fa fa-google-plus"></i>
-            </a>
-            <a class="w-inline-block social-link" href="http://br.linkedin.com/in/wakimjraige" target="_blank">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a class="w-inline-block social-link" href="http://pt.stackoverflow.com/users/6436/wakim" target="_blank">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-            <a class="w-inline-block social-link" href="https://github.com/wakim" target="_blank">
-              <i class="fa fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
 
     <div class="ssm-overlay ssm-toggle-nav low-res"></div>
 
