@@ -27,6 +27,7 @@
 
 .social-link {
   color: #000;
+  text-align: center;
 }
 
 nav, .toolbar {
@@ -39,6 +40,16 @@ nav, .toolbar {
   width: 100%;
   transform: none;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.contacts * {
+  padding: 8px;
+}
+
+.contacts a {
+  font-family:'Roboto', sans-serif;
+  font-size: 12pt;
+  font-weight: 300;
 }
 
 nav ul {
@@ -150,14 +161,10 @@ p {
   margin-bottom: 32px;
 }
 
-.contacts-container {
-  display: inline-block;
-}
-
 .language-container {
-  float: right;
-  display: inline-block;
+  display: block;
   text-align: right;
+  margin-bottom: 4px;
 }
 
 .title-image {
@@ -170,6 +177,10 @@ p {
   box-shadow: black 3px 3px 12px -1px;
   width: 120px;
   height: 120px;
+}
+
+.card-header-icon {
+  margin-right: 8px;
 }
 
 .main {

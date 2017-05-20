@@ -41,13 +41,14 @@
         display: none;
       }
     </style>
-    <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">my Linkedin profile.</a></h3>
+    <h3 style="color: #fff; text-align: center; margin-top: 8px; position: relative; top: 60px;">No Javascript, visit <a style="color: #fff;" href="http://br.linkedin.com/in/wakimjraige">, access my LinkedIn profile.</a></h3>
   </noscript>
 
-  <body ng-controller="main">
+  <body ng-controller="main" class="ng-cloak" ng-cloak>
     <nav>
       <ul>
         <li><a href="#resume">{{strings.resume}}</a></li>
+        <li><a href="#contacts">{{strings.contacts}}</a></li>
         <li><a href="#exp">{{strings.experiences}}</a></li>
         <li><a href="#skills">{{strings.some_interests}}</a></li>
         <li><a href="#projects">{{strings.personal_projects}}</a></li>
@@ -59,27 +60,8 @@
       </span>
     </div>
 
-    <main class="main" class="ng-cloak">
+    <main class="main">
       <section class="w-container contacts-container">
-        <div class="w-row">
-          <div class="social-widget-wrapper">
-            <a class="w-inline-block social-link here" href="#" id="mail">
-              <i class="fa fa-fw fa-envelope-o"></i>
-            </a>
-            <a class="w-inline-block social-link" href="https://plus.google.com/+WakimJraige" target="_blank">
-              <i class="fa fa-google-plus"></i>
-            </a>
-            <a class="w-inline-block social-link" href="http://br.linkedin.com/in/wakimjraige" target="_blank">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a class="w-inline-block social-link" href="http://pt.stackoverflow.com/users/6436/wakim" target="_blank">
-              <i class="fa fa-stack-overflow"></i>
-            </a>
-            <a class="w-inline-block social-link" href="https://github.com/wakim" target="_blank">
-              <i class="fa fa-github"></i>
-            </a>
-          </div>
-        </div>
       </section>
 
       <section class="w-container language-container">
@@ -92,7 +74,7 @@
       </section>
 
       <section class="resume card-1">
-        <img class="title-image" src="images/time-wakim.jpg" alt="Me" />
+        <img class="title-image" id="resume" src="images/time-wakim.jpg" alt="Me" />
         <h1 class="title">Wakim Jraige</h1>
         <p class="sub-title w-row" ng-bind-html="school | trustHtml"></p>
         <p class="main-p w-row" ng-bind-html="resume | trustHtml"></p>
@@ -100,7 +82,22 @@
 
       <div class="w-row card-header">
         <div class="w-col w-col-stack">
-          <h3 id="exp"><i class="fa fa-briefcase"></i> {{strings.experiences}}</h3>
+          <h3 id="contacts"><i class="fa fa-user card-header-icon"></i> {{strings.contacts}}</h3>
+        </div>
+      </div>
+
+      <section class="contacts card-1">
+        <a href="mailto:{{email}}" target="_blank"><i class="fa fa-envelope-o"></i> {{email}}</a><br />
+        <a href="https://plus.google.com/+WakimJraige" target="_blank"><i class="fa fa-google-plus"></i> +WakimJraige</a><br />
+        <a href="http://br.linkedin.com/in/wakimjraige" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a><br />
+        <a href="https://pt.stackoverflow.com/users/6436/wakim" target="_blank"><i class="fa fa-stack-overflow"></i> StackOverflow</a><br />
+        <a href="https://github.com/wakim" target="_blank"><i class="fa fa-github"></i> Github</a><br />
+        <a href="https://twitter.com/wakimjraige" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+      </section>
+
+      <div class="w-row card-header">
+        <div class="w-col w-col-stack">
+          <h3 id="exp"><i class="fa fa-briefcase card-header-icon"></i> {{strings.experiences}}</h3>
         </div>
       </div>
 
@@ -125,7 +122,7 @@
 
       <div class="w-row card-header">
         <div class="w-col w-col-stack">
-          <h3 id="skills"><i class="fa fa-code"></i> {{strings.some_interests}}</h3>
+          <h3 id="skills"><i class="fa fa-code card-header-icon"></i> {{strings.some_interests}}</h3>
         </div>
       </div>
 
@@ -142,7 +139,7 @@
 
       <div class="w-row card-header">
         <div class="w-col w-col-stack">
-          <h3 id="projects"><i class="fa fa-terminal"></i> {{strings.personal_projects}}</h3>
+          <h3 id="projects"><i class="fa fa-terminal card-header-icon"></i> {{strings.personal_projects}}</h3>
         </div>
       </div>
 

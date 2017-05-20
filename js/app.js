@@ -1,8 +1,9 @@
 (function(angular, undefined) {
     var model = {
                     "pt": {
+                        "email": "wakim.jraige@gmail.com",
                         "school": "Bacharel em Ciências da Computação pela UFRJ",
-                        "resume": "Sou desenvolvedor Android, com experiência em desenvolvimento Web.<br /><br />Motivado em encontrar as melhores formas de ganhar qualidade e produtividade, seja em termos de padrões e práticas de desenvolvimento, técnologias e ferramentas. Sempre busco novidades para atingir esse objetivo.",
+                        "resume": "Sou desenvolvedor Android, com experiência em desenvolvimento Web.<br /><br />Motivado em encontrar as melhores formas de ganhar qualidade e produtividade, seja em termos de padrões e práticas de desenvolvimento, tecnologias e ferramentas. Sempre busco novidades para atingir esse objetivo.",
                         "jobs": [
                             {
                                 "location": "HE:labs",
@@ -101,6 +102,7 @@
                         ]
                     },
                     "en": {
+                        "email": "wakim.jraige@gmail.com",
                         "school": "Bachelor of Computer Science UFRJ",
                         "resume": "I'm a Android developer, with experience in Web development.<br /><br />Motivated to find the best way to increase quality and productivity, either in terms of development patterns and pratices, technologies and tools. Always search news to reach this objective.",
                         "jobs": [
@@ -228,7 +230,8 @@
                             "some_interests": "Tecnologias de interesse",
                             "experiences": "Experiências",
                             "resume": "Resumo",
-                            "main_activities": "Principais atividades"
+                            "main_activities": "Principais atividades",
+                            "contacts": "Contatos"
                         },
                         "en": {
                             "title": "Wakim Jraige - Web Site",
@@ -240,7 +243,8 @@
                             "some_interests": "Technologies of interest",
                             "experiences": "Experiences",
                             "resume": "Resume",
-                            "main_activities": "Main Activies"
+                            "main_activities": "Main Activies",
+                            "contacts": "Contacts"
                         }
                     }
                 };
