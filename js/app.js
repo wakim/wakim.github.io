@@ -60,21 +60,21 @@
                                 "name": "Kotlin MVP Starter",
                                 "desc": "Pequeno projeto demonstrando a arquitetura MVP no Android.",
                                 "more_desc": "O objetivo principal é fornecer um guia para novos projetos, seguindo a arquitetura MVP com Dagger2, RxJava, Kotlin e Unit Tests.",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=kotlin-mvp-starter&type=fork&count=false&size=large",
+                                "github_source": "https://github.com/wakim/kotlin-mvp-starter",
                                 "fa_icons": ["fa-android", "fa-mobile"]
                             },
                             {
                                 "name": "ESL Pod Client",
                                 "desc": "Pequeno projeto de um player mobile Android para podcasts do site English as Second Language.",
                                 "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin.",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=esl-pod-client&type=fork&count=false&size=large",
+                                "github_source": "https://github.com/wakim/esl-pod-client",
                                 "fa_icons": ["fa-android", "fa-mobile"]
                             },
                             {
                                 "name": "Github Sample",
                                 "desc": "Pequeno projeto para busca de usuários e repositórios no Github.",
                                 "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin juntamente com testes unitários e testes de instrumentação.",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=github-sample&type=fork&count=false&size=large",
+                                "github_source": "https://github.com/wakim/github-sample",
                                 "fa_icons": ["fa-android", "fa-mobile"]
                             },
                             {
@@ -97,7 +97,7 @@
                                 "more_desc": "Se integra opcionalmente com o dispositivo móvel (Smartphone ou Tablet) para sincronização de dados.",
                                 "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
                                 "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=wearable-planning-poker&type=fork&count=false&size=large"
+                                "github_source": "https://github.com/wakim/wearable-planning-poker"
                             }
                         ]
                     },
@@ -161,21 +161,21 @@
                                 "name": "Kotlin MVP Starter",
                                 "desc": "Small project demonstrating the MVP architecture for Android.",
                                 "more_desc": "The main goal is to provide a prototype for new Android projects. Using MVP architecture with Dagger2, RxJava, Kotlin and Unit Tests.",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=kotlin-mvp-starter&type=fork&count=false&size=large",
+                                "github_source": "https://github.com/wakim/kotlin-mvp-starter",
                                 "fa_icons": ["fa-android", "fa-mobile"]
                             },
                             {
                                 "name": "ESL Pod Client",
                                 "desc": "Project of a small mobile player for English as Second Language website podcasts for Android platform.",
                                 "more_desc": "The main goal was learn the use of MVP architecture and Kotlin on Android environment.",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=esl-pod-client&type=fork&count=false&size=large",
+                                "github_source": "https://github.com/wakim/esl-pod-client",
                                 "fa_icons": ["fa-android", "fa-mobile"]
                             },
                             {
                                 "name": "Github Sample",
                                 "desc": "Small project to search users and repositories on Github.",
                                 "more_desc": "The main goal was to learn the MVP archicture with Kotlin on Android environment and applying some unit and instrumentation tests.",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=github-sample&type=fork&count=false&size=large",
+                                "github_source": "https://github.com/wakim/github-sample",
                                 "fa_icons": ["fa-android", "fa-mobile"]
                             },
                             {
@@ -200,7 +200,7 @@
                                 "more_desc": "Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state.",
                                 "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
                                 "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
-                                "github_source": "http://ghbtns.com/github-btn.html?user=wakim&repo=wearable-planning-poker&type=fork&count=false&size=large"
+                                "github_source": "https://github.com/wakim/wearable-planning-poker"
                             }
                         ]
                     },
@@ -231,7 +231,10 @@
                             "experiences": "Experiências",
                             "resume": "Resumo",
                             "main_activities": "Principais atividades",
-                            "contacts": "Contatos"
+                            "contacts": "Contatos",
+                            "github_contributions": "Contribuições no Github",
+                            "contain_private_contributions": "Contém contribuições privadas",
+                            "source": "Fonte"
                         },
                         "en": {
                             "title": "Wakim Jraige - Web Site",
@@ -244,7 +247,10 @@
                             "experiences": "Experiences",
                             "resume": "Resume",
                             "main_activities": "Main Activies",
-                            "contacts": "Contacts"
+                            "contacts": "Contacts",
+                            "github_contributions": "Github Contributions",
+                            "contain_private_contributions": "Contain private contributions",
+                            "source": "Source"
                         }
                     }
                 };
