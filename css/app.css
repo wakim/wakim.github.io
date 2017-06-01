@@ -407,19 +407,17 @@ p {
 	}
 
 	.toolbar {
-		display: table;
+		display: relative;
 	}
 
 	.toolbar .menu {
-		color: white;
-		font-size: 28px;
+		position: absolute;
+		width: 48px;
+		height: 48px;
 		padding-left: 16px;
-		display: table-cell;
-		vertical-align: middle;
-	}
-
-	.toolbar .menu:before {
-		content: '\2630';
+		margin: auto;
+    	top: 0;
+    	bottom: 0;
 	}
 
 	nav ul li {
