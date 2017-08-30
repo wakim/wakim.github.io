@@ -108,7 +108,7 @@
                         "jobs": [
                             {
                                 "location": "HE:labs",
-                                "desc": "Android Developer, acting in small multidisciplinary remote agile teams, with constant comunication and colaboration with clients, always with the goal to transform ideas in digital products, with total focus on MVP.<br /><br />To reach the goal of weekly releases of functional software, we use the XP framework with clients involvement, to build solutions which meets the need in terms of time and quality.<br /><br />Always possible we use current market tools, patterns and technologies, including: Kotlin, MVP, TDD, Continuous Integration and Deployment, Dagger2, Rx, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm and much more.",
+                                "desc": "Android Developer, acting in small multidisciplinary remote agile teams, with constant comunication and colaboration with clients, always with the goal to transform ideas in digital products, with total focus on MVP.<br /><br />To reach the goal of weekly releases of functional software, we use the XP framework with clients involvement, to build solutions which meets the need in terms of time and quality.<br /><br />As much as possible we use current market tools, patterns and technologies, including: Kotlin, MVP, TDD, Continuous Integration and Deployment, Dagger2, Rx, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm and much more.",
                                 "interval": "06-2015 - actual",
                                 "activities": [
                                     "Plan, design e develop weekly deliveries of functional mobile software"
