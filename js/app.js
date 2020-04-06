@@ -1,259 +1,271 @@
 (function(angular, undefined) {
     var model = {
-                    "pt": {
-                        "email": "wakim.jraige@gmail.com",
-                        "school": "Bacharel em Ciências da Computação pela UFRJ",
-                        "resume": "Sou desenvolvedor Android, com experiência em desenvolvimento Web.<br /><br />Motivado em encontrar as melhores formas de ganhar qualidade e produtividade, seja em termos de padrões e práticas de desenvolvimento, tecnologias e ferramentas. Sempre busco novidades para atingir esse objetivo.",
-                        "jobs": [
-                            {
-                                "location": "HE:labs",
-                                "desc": "Desenvolvedor Android, atuando em pequenos times remotos ágeis multidisciplinares, com constante comunicação e colaboração dos clientes, sempre com objetivo de transformar idéias em produtos digitais, com foco total em MVP.<br /><br />Para atingir o objetivo de realizar entregas semanais de software funcional, utilizamos o framework XP com envolvimento dos clientes, para construir soluções que atendam as necessidades em termos de tempo, escopo e qualidade.<br /><br />Sempre que possível utilizamos ferramentas, padrões e tecnologias atuais do mercado, entre elas: Kotlin, MVP, TDD, Continuous Integration and Deployment, Dagger2, RxJava, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm e entre outras.",
-                                "interval": "06/2015 - dias atuais",
-                                "activities": [
-                                    "Planejar, projetar e desenvolver entregas semanais de software funcional"
-                                ]
-                            },
-                            {
-                                "location": "Stefanini",
-                                "desc": "Analista Desenvolvedor Java, trabalhando no projeto do Fundo de Garantia da Caixa Econômica Federal.",
-                                "interval": "10/2014 - 05/2015",
-                                "activities": [
-                                    "Projetar e desenvolver os módulos do sistema do Fundo de Garantia, seguindo especificações em caso de uso",
-                                    "Desenvolvimento Back-end com Java, utilizando JSF, EJB 3 e JPA",
-                                    "Desenvolvimento Front-end com Javascript (jQuery e plugins), CSS3 (Bootstrap) em componentes PrimeFaces",
-                                    "Banco de dados DB2 para armazenamento de dados",
-                                    "Uso do servidor JBoss 6.3 EAP como servidor de aplicação"
-                                ]
-                            },
-                            {
-                                "location": "GPE (ScrumHalf)",
-                                "desc": "Desenvolvedor Java Web trabalhando como integrante de uma equipe de desenvolvimento Scrum. Trabalhei no desenvolvimento e manutenção do SaaS ScrumHalf.",
-                                "interval": "12/2011 - 07/2014",
-                                "activities": [
-                                    "Planejar, projetar, desenvolver e testar o ScrumHalf",
-                                    "Desenvolvimento Back-end com Java, utilizando JSF, EJB 3, JPA e JMS",
-                                    "Testes funcionais utilizando JUnit, Selenium e DBUnit",
-                                    "Desenvolvimento Front-end com Javascript (KnockoutJS), CSS3 em componentes PrimeFaces",
-                                    "Armazenamento de dados por banco de dados MySQL",
-                                    "Uso do servidor JBoss 6 e 7 como servidor de aplicação",
-                                    "Lançamento de versões do ScrumHalf, com mudanças significativas, informando as mudanças para os usuários",
-                                    "Suporte aos usuários, respondendo dúvidas e resolvendo bugs"
-                                ]
-                            },
-                            {
-                                "location": "COPPETEC",
-                                "desc": "Desenvolvedor Java Web, trabalhando com manutenção e desenvolvimento de aplicações web sociais da marinha.",
-                                "interval": "07/2010 - 06/2011",
-                                "activities": [
-                                    "Projetar e desenvolver funcionalidades nos sitemas internos do Abrigo do marinheiro DSS/AMN",
-                                    "Desenvolvimento Back-end com Java, utilizando JSP, Servlets e JDBC",
-                                    "Desenvolvimento Front-end com Javascript e CSS",
-                                    "Armazenamento de dados em banco de dados MS SQL Server",
-                                    "Uso do servidor Tomcat como Servlet container",
-                                    "Suporte aos usuários, respondendo dúvidas e resolvendo bugs"
-                                ]
-                            }
-                        ],
+        "pt": {
+            "email": "wakim.jraige@gmail.com",
+            "school": "Bacharel em Ciências da Computação pela UFRJ",
+            "resume": "Sou desenvolvedor Android, com experiência em desenvolvimento Web.<br /><br />Motivado em encontrar as melhores formas de ganhar qualidade e produtividade, seja em termos de padrões e práticas de desenvolvimento, tecnologias e ferramentas. Sempre busco novidades para atingir esse objetivo.",
+            "jobs": [
+                {
+                    "location": "Carta",
+                    "desc": "Trabalho atualmente como engenheiro frontend e backend, usando React e demais tecnologias associadas. <br />Junto com Django e Python no backend. Trabalhamos em equipe multidisciplinar em uma cultura Ágil.<br />Anteriormente trabalhei brevemente como engenheiro android no app da Carta.",
+                    "interval": "10/2017 - dias atuais",
+                    "activities": []
+                },
+                {
+                    "location": "HE:labs",
+                    "desc": "Desenvolvedor Android, atuando em pequenos times ágeis multidisciplinares, com constante comunicação e colaboração dos clientes, sempre com objetivo de transformar idéias em produtos digitais, com foco total em MVP.<br />Para atingir o objetivo de realizar entregas semanais de software funcional, utilizamos o framework XP com envolvimento dos clientes, para construir soluções que atendam as necessidades em termos de tempo, escopo e qualidade. <br />Sempre que possível utilizamos ferramentas, padrões e tecnologias atuais do mercado, entre elas: Kotlin, MVP, MVVM, TDD, Continuous Integration and Deployment, Dagger2, RxJava, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm e entre outras.",
+                    "interval": "06/2015 - 09/2017",
+                    "activities": [
+                        "Planejar, projetar e desenvolver entregas semanais de software funcional"
+                    ]
+                },
+                {
+                    "location": "Stefanini",
+                    "desc": "Analista Desenvolvedor Java, trabalhando no projeto do Fundo de Garantia da Caixa Econômica Federal.",
+                    "interval": "10/2014 - 05/2015",
+                    "activities": [
+                        "Projetar e desenvolver os módulos do sistema do Fundo de Garantia, seguindo especificações em caso de uso",
+                        "Desenvolvimento Back-end com Java, utilizando JSF, EJB 3 e JPA",
+                        "Desenvolvimento Front-end com Javascript (jQuery e plugins), CSS3 (Bootstrap) em componentes PrimeFaces",
+                        "Banco de dados DB2 para armazenamento de dados",
+                        "Uso do servidor JBoss 6.3 EAP como servidor de aplicação"
+                    ]
+                },
+                {
+                    "location": "GPE (ScrumHalf)",
+                    "desc": "Desenvolvedor Java Web trabalhando como integrante de uma equipe de desenvolvimento Scrum. Trabalhei no desenvolvimento e manutenção do SaaS ScrumHalf.",
+                    "interval": "12/2011 - 07/2014",
+                    "activities": [
+                        "Planejar, projetar, desenvolver e testar o ScrumHalf",
+                        "Desenvolvimento Back-end com Java, utilizando JSF, EJB 3, JPA e JMS",
+                        "Testes funcionais utilizando JUnit, Selenium e DBUnit",
+                        "Desenvolvimento Front-end com Javascript (KnockoutJS), CSS3 em componentes PrimeFaces",
+                        "Armazenamento de dados por banco de dados MySQL",
+                        "Uso do servidor JBoss 6 e 7 como servidor de aplicação",
+                        "Lançamento de versões do ScrumHalf, com mudanças significativas, informando as mudanças para os usuários",
+                        "Suporte aos usuários, respondendo dúvidas e resolvendo bugs"
+                    ]
+                },
+                {
+                    "location": "COPPETEC",
+                    "desc": "Desenvolvedor Java Web, trabalhando com manutenção e desenvolvimento de aplicações web sociais da marinha.",
+                    "interval": "07/2010 - 06/2011",
+                    "activities": [
+                        "Projetar e desenvolver funcionalidades nos sitemas internos do Abrigo do marinheiro DSS/AMN",
+                        "Desenvolvimento Back-end com Java, utilizando JSP, Servlets e JDBC",
+                        "Desenvolvimento Front-end com Javascript e CSS",
+                        "Armazenamento de dados em banco de dados MS SQL Server",
+                        "Uso do servidor Tomcat como Servlet container",
+                        "Suporte aos usuários, respondendo dúvidas e resolvendo bugs"
+                    ]
+                }
+            ],
 
-                        "personal_projects": [
-                            {
-                                "name": "Kotlin MVP Starter",
-                                "desc": "Pequeno projeto demonstrando a arquitetura MVP no Android.",
-                                "more_desc": "O objetivo principal é fornecer um guia para novos projetos, seguindo a arquitetura MVP com Dagger2, RxJava, Kotlin e Unit Tests.",
-                                "github_source": "https://github.com/wakim/kotlin-mvp-starter",
-                                "fa_icons": ["fa-android", "fa-mobile"]
-                            },
-                            {
-                                "name": "ESL Pod Client",
-                                "desc": "Pequeno projeto de um player mobile Android para podcasts do site English as Second Language.",
-                                "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin.",
-                                "github_source": "https://github.com/wakim/esl-pod-client",
-                                "fa_icons": ["fa-android", "fa-mobile"]
-                            },
-                            {
-                                "name": "Github Sample",
-                                "desc": "Pequeno projeto para busca de usuários e repositórios no Github.",
-                                "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin juntamente com testes unitários e testes de instrumentação.",
-                                "github_source": "https://github.com/wakim/github-sample",
-                                "fa_icons": ["fa-android", "fa-mobile"]
-                            },
-                            {
-                                "name": "Agile Planning Poker",
-                                "desc": "Meu primeiro aplicativo mobile na plataforma Android, publicado na Play Store, resultante do começo do estudo na área Mobile e plataforma Android para o Projeto Final.",
-                                "more_desc": "O aplicativo fornece uma série de baralhos, incluindo um baralho personalizável, para sessões de Planning Poker. Com animações que tornam o uso mais interessante.",
-                                "fa_icons": ["fa-android", "fa-mobile", "fa-tablet", "fa-university"],
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker"
-                            },
-                            {
-                                "name": "Distributed Planning Poker",
-                                "desc": "Evolução do Agile Planning Poker, que utiliza a plataforma Play Games® da Google® para permitir a integração e comunicação entre os participantes de Planning Poker em Equipes Distribuídas.",
-                                "more_desc": "O aplicativo facilita a realização de sessões de Planning Poker de equipes distribuídas, não importanto a localização dos membros, fornecendo acompanhamento para as etapas de um rodada de votação, incluído um espaço para discussão de ideias.",
-                                "fa_icons": ["fa-android", "fa-mobile", "fa-users", "fa-google-plus", "fa-gamepad"],
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer"
-                            },
-                            {
-                                "name": "Wear Planning Poker",
-                                "desc": "O aplicativo fornece uma série de baralhos para sessões de Planning Poker, adaptado a plataforma Wearable.<br />Na presença do dispositivo com Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).",
-                                "more_desc": "Se integra opcionalmente com o dispositivo móvel (Smartphone ou Tablet) para sincronização de dados.",
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
-                                "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
-                                "github_source": "https://github.com/wakim/wearable-planning-poker"
-                            }
-                        ]
-                    },
-                    "en": {
-                        "email": "wakim.jraige@gmail.com",
-                        "school": "Bachelor of Computer Science UFRJ",
-                        "resume": "I'm a Android developer, with experience in Web development.<br /><br />Motivated to find the best way to increase quality and productivity, either in terms of development patterns and pratices, technologies and tools. Always search news to reach this objective.",
-                        "jobs": [
-                            {
-                                "location": "HE:labs",
-                                "desc": "Android Developer, acting in small multidisciplinary remote agile teams, with constant comunication and colaboration with clients, always with the goal to transform ideas in digital products, with total focus on MVP.<br /><br />To reach the goal of weekly releases of functional software, we use the XP framework with clients involvement, to build solutions which meets the need in terms of time and quality.<br /><br />As much as possible we use current market tools, patterns and technologies, including: Kotlin, MVP, TDD, Continuous Integration and Deployment, Dagger2, Rx, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm and much more.",
-                                "interval": "06-2015 - actual",
-                                "activities": [
-                                    "Plan, design e develop weekly deliveries of functional mobile software"
-                                ]
-                            },
-                            {
-                                "location": "Stefanini",
-                                "desc": "Java Development Analyst, working on a Guarantee Fund Project of Caixa Econômica Federal.",
-                                "interval": "10-2014 - 05-2015",
-                                "activities": [
-                                    "Design and develop Garantee Fund modules, following the use cases especifications",
-                                    "Back-end Development using Java with JSF, EJB 3 and JPA",
-                                    "Front-end Development using Javascript (jQuery and plugins), XHTML, CSS3 (Bootstrap) in PrimeFaces components",
-                                    "Database Engine DB2 for Data Storage",
-                                    "JBoss 6.3 EAP as Application Server"
-                                ]
-                            },
-                            {
-                                "location": "GPE (ScrumHalf)",
-                                "desc": "Java Web Developer as part of a Scrum Team. Working on SaaS ScrumHalf on development and maintenance.",
-                                "interval": "12-2011 - 07-2014",
-                                "activities": [
-                                    "Plan, design, develop and test ScrumHalf",
-                                    "Back-end development using Java with JSF, EJB 3, JPA and JMS",
-                                    "Functional tests using JUnit, Selenium and DBUnit",
-                                    "Front-end development with Javascript (KnockoutJS), HTML5 and CSS3 in PrimeFaces components",
-                                    "Database Engine MySQL",
-                                    "JBoss 6 and 7 as Application Server",
-                                    "Rollout new ScrumHalf releases, with significant changes, notifying changes to users",
-                                    "Users support, answering questions and resolving bugs"
-                                ]
-                            },
-                            {
-                                "location": "COPPETEC",
-                                "desc": "Java Web Developer, working with development and maintenance of brazilian navy social web applications.",
-                                "interval": "07-2010 - 06-2011",
-                                "activities": [
-                                    "Design and develop features for internal applications of \"Abrigo do marinheiro\" DSS/AMN",
-                                    "Back-end development with Java, using JSP, Servlets and JDBC",
-                                    "Front-end development with Javascript, XHTML and CSS",
-                                    "Database engine MS SQL Server",
-                                    "Tomcat as Servlet Container",
-                                    "Users support, answering questions and resolving bugs"
-                                ]
-                            }
-                        ],
+            "personal_projects": [
+                {
+                    "name": "Kotlin MVP Starter",
+                    "desc": "Pequeno projeto demonstrando a arquitetura MVP no Android.",
+                    "more_desc": "O objetivo principal é fornecer um guia para novos projetos, seguindo a arquitetura MVP com Dagger2, RxJava, Kotlin e Unit Tests.",
+                    "github_source": "https://github.com/wakim/kotlin-mvp-starter",
+                    "fa_icons": ["fa-android", "fa-mobile"]
+                },
+                {
+                    "name": "ESL Pod Client",
+                    "desc": "Pequeno projeto de um player mobile Android para podcasts do site English as Second Language.",
+                    "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin.",
+                    "github_source": "https://github.com/wakim/esl-pod-client",
+                    "fa_icons": ["fa-android", "fa-mobile"]
+                },
+                {
+                    "name": "Github Sample",
+                    "desc": "Pequeno projeto para busca de usuários e repositórios no Github.",
+                    "more_desc": "O objetivo principal do projeto foi o estudo da arquitetura MVP com a linguagem Kotlin juntamente com testes unitários e testes de instrumentação.",
+                    "github_source": "https://github.com/wakim/github-sample",
+                    "fa_icons": ["fa-android", "fa-mobile"]
+                },
+                {
+                    "name": "Agile Planning Poker",
+                    "desc": "Meu primeiro aplicativo mobile na plataforma Android, publicado na Play Store, resultante do começo do estudo na área Mobile e plataforma Android para o Projeto Final.",
+                    "more_desc": "O aplicativo fornece uma série de baralhos, incluindo um baralho personalizável, para sessões de Planning Poker. Com animações que tornam o uso mais interessante.",
+                    "fa_icons": ["fa-android", "fa-mobile", "fa-tablet", "fa-university"],
+                    "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker"
+                },
+                {
+                    "name": "Distributed Planning Poker",
+                    "desc": "Evolução do Agile Planning Poker, que utiliza a plataforma Play Games® da Google® para permitir a integração e comunicação entre os participantes de Planning Poker em Equipes Distribuídas.",
+                    "more_desc": "O aplicativo facilita a realização de sessões de Planning Poker de equipes distribuídas, não importanto a localização dos membros, fornecendo acompanhamento para as etapas de um rodada de votação, incluído um espaço para discussão de ideias.",
+                    "fa_icons": ["fa-android", "fa-mobile", "fa-users", "fa-google-plus", "fa-gamepad"],
+                    "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer"
+                },
+                {
+                    "name": "Wear Planning Poker",
+                    "desc": "O aplicativo fornece uma série de baralhos para sessões de Planning Poker, adaptado a plataforma Wearable.<br />Na presença do dispositivo com Agile Planning Poker, é possível espelhar o estado entre os aplicativos (cores e seleções).",
+                    "more_desc": "Se integra opcionalmente com o dispositivo móvel (Smartphone ou Tablet) para sincronização de dados.",
+                    "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
+                    "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
+                    "github_source": "https://github.com/wakim/wearable-planning-poker"
+                }
+            ]
+        },
+        "en": {
+            "email": "wakim.jraige@gmail.com",
+            "school": "Bachelor of Computer Science UFRJ",
+            "resume": "I'm a Android developer, with experience in Web development.<br /><br />Motivated to find the best way to increase quality and productivity, either in terms of development patterns and pratices, technologies and tools. Always search news to reach this objective.",
+            "jobs": [
+                {
+                    "location": "Carta",
+                    "desc": "Nowadays working as a frontend and backend engineer using React and related tools with a Django Python backend.<br /> Working in a multidisciplinary team in a Agile culture.<br /> Worked previously and shortly as an Android engineer on Carta Android app.",
+                    "interval": "10/2017 - Actual",
+                    "activities": []
+                },
+                {
+                    "location": "HE:labs",
+                    "desc": "Working as an android Developer, collaborating in smalls multidisciplinary and auto organized remote agile teams, with constant communication and collaboration with our clients. Always seeking to transform ideas in digital products, with focus on MVP.<br /> To perform weekly releases of functional software, we use the XP framework with our clients involvement to build solutions which meets the needs in terms of time and quality.<br /> Whenever possible we use current market tools, patterns and technologies, including: Kotlin, MVP, TDD, Continuous Integration and Deployment, Dagger2, Rx, Retrofit, Gson, Support Libraries, Google Play Services, LeakCanary, Stetho, Realm and much more.",
+                    "interval": "06/2015 - 09/2017",
+                    "activities": [
+                        "Plan, design e develop weekly deliveries of functional mobile software"
+                    ]
+                },
+                {
+                    "location": "Stefanini",
+                    "desc": "Java Development Analyst, working on a Guarantee Fund Project of Caixa Econômica Federal.",
+                    "interval": "10/2014 - 05/2015",
+                    "activities": [
+                        "Design and develop Garantee Fund modules, following the use cases especifications",
+                        "Back-end Development using Java with JSF, EJB 3 and JPA",
+                        "Front-end Development using Javascript (jQuery and plugins), XHTML, CSS3 (Bootstrap) in PrimeFaces components",
+                        "Database Engine DB2 for Data Storage",
+                        "JBoss 6.3 EAP as Application Server"
+                    ]
+                },
+                {
+                    "location": "GPE (ScrumHalf)",
+                    "desc": "Java Web Developer as part of a Scrum Team. Working on SaaS ScrumHalf on development and maintenance.",
+                    "interval": "12/2011 - 07/2014",
+                    "activities": [
+                        "Plan, design, develop and test ScrumHalf",
+                        "Back-end development using Java with JSF, EJB 3, JPA and JMS",
+                        "Functional tests using JUnit, Selenium and DBUnit",
+                        "Front-end development with Javascript (KnockoutJS), HTML5 and CSS3 in PrimeFaces components",
+                        "Database Engine MySQL",
+                        "JBoss 6 and 7 as Application Server",
+                        "Rollout new ScrumHalf releases, with significant changes, notifying changes to users",
+                        "Users support, answering questions and resolving bugs"
+                    ]
+                },
+                {
+                    "location": "COPPETEC",
+                    "desc": "Java Web Developer, working with development and maintenance of brazilian navy social web applications.",
+                    "interval": "07/2010 - 06/2011",
+                    "activities": [
+                        "Design and develop features for internal applications of \"Abrigo do marinheiro\" DSS/AMN",
+                        "Back-end development with Java, using JSP, Servlets and JDBC",
+                        "Front-end development with Javascript, XHTML and CSS",
+                        "Database engine MS SQL Server",
+                        "Tomcat as Servlet Container",
+                        "Users support, answering questions and resolving bugs"
+                    ]
+                }
+            ],
 
-                        "personal_projects": [
-                            {
-                                "name": "Kotlin MVP Starter",
-                                "desc": "Small project demonstrating the MVP architecture for Android.",
-                                "more_desc": "The main goal is to provide a prototype for new Android projects. Using MVP architecture with Dagger2, RxJava, Kotlin and Unit Tests.",
-                                "github_source": "https://github.com/wakim/kotlin-mvp-starter",
-                                "fa_icons": ["fa-android", "fa-mobile"]
-                            },
-                            {
-                                "name": "ESL Pod Client",
-                                "desc": "Project of a small mobile player for English as Second Language website podcasts for Android platform.",
-                                "more_desc": "The main goal was learn the use of MVP architecture and Kotlin on Android environment.",
-                                "github_source": "https://github.com/wakim/esl-pod-client",
-                                "fa_icons": ["fa-android", "fa-mobile"]
-                            },
-                            {
-                                "name": "Github Sample",
-                                "desc": "Small project to search users and repositories on Github.",
-                                "more_desc": "The main goal was to learn the MVP archicture with Kotlin on Android environment and applying some unit and instrumentation tests.",
-                                "github_source": "https://github.com/wakim/github-sample",
-                                "fa_icons": ["fa-android", "fa-mobile"]
-                            },
-                            {
-                                "name": "Agile Planning Poker",
-                                "desc": "My first Android app, published on Google Play Store, result of the starting study on mobile area and Android Platform for my Graduate Thesis.",
-                                "more_desc": "The app provides some decks, including a customizable one, for Planning Poker sessions. With animations that makes the use more interesting.",
-                                "fa_icons": ["fa-android", "fa-mobile", "fa-tablet", "fa-university"],
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker"
-                            },
+            "personal_projects": [
+                {
+                    "name": "Kotlin MVP Starter",
+                    "desc": "Small project demonstrating the MVP architecture for Android.",
+                    "more_desc": "The main goal is to provide a prototype for new Android projects. Using MVP architecture with Dagger2, RxJava, Kotlin and Unit Tests.",
+                    "github_source": "https://github.com/wakim/kotlin-mvp-starter",
+                    "fa_icons": ["fa-android", "fa-mobile"]
+                },
+                {
+                    "name": "ESL Pod Client",
+                    "desc": "Project of a small mobile player for English as Second Language website podcasts for Android platform.",
+                    "more_desc": "The main goal was learn the use of MVP architecture and Kotlin on Android environment.",
+                    "github_source": "https://github.com/wakim/esl-pod-client",
+                    "fa_icons": ["fa-android", "fa-mobile"]
+                },
+                {
+                    "name": "Github Sample",
+                    "desc": "Small project to search users and repositories on Github.",
+                    "more_desc": "The main goal was to learn the MVP archicture with Kotlin on Android environment and applying some unit and instrumentation tests.",
+                    "github_source": "https://github.com/wakim/github-sample",
+                    "fa_icons": ["fa-android", "fa-mobile"]
+                },
+                {
+                    "name": "Agile Planning Poker",
+                    "desc": "My first Android app, published on Google Play Store, result of the starting study on mobile area and Android Platform for my Graduate Thesis.",
+                    "more_desc": "The app provides some decks, including a customizable one, for Planning Poker sessions. With animations that makes the use more interesting.",
+                    "fa_icons": ["fa-android", "fa-mobile", "fa-tablet", "fa-university"],
+                    "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker"
+                },
 
-                            {
-                                "name": "Distributed Planning Poker",
-                                "desc": "Evolution of Agile Planning Poker, using the Play Games® platform from Google® to allow the integration and communication between Planning Poker session peers from Distributed Teams.",
-                                "more_desc": "This app facilitates the realization of Planning Poker sessions between members of a Distributed Team, no matter the location of the peers.",
-                                "fa_icons": ["fa-android", "fa-mobile", "fa-users", "fa-google-plus", "fa-gamepad"],
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer"
-                            },
+                {
+                    "name": "Distributed Planning Poker",
+                    "desc": "Evolution of Agile Planning Poker, using the Play Games® platform from Google® to allow the integration and communication between Planning Poker session peers from Distributed Teams.",
+                    "more_desc": "This app facilitates the realization of Planning Poker sessions between members of a Distributed Team, no matter the location of the peers.",
+                    "fa_icons": ["fa-android", "fa-mobile", "fa-users", "fa-google-plus", "fa-gamepad"],
+                    "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.multiplayer"
+                },
 
-                            {
-                                "name": "Wear Planning Poker",
-                                "desc": "This app provides a set of decks for Planning Poker sessions, adapted to Wearable Platform.<br />Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state (colors and selection).",
-                                "more_desc": "Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state.",
-                                "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
-                                "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
-                                "github_source": "https://github.com/wakim/wearable-planning-poker"
-                            }
-                        ]
-                    },
+                {
+                    "name": "Wear Planning Poker",
+                    "desc": "This app provides a set of decks for Planning Poker sessions, adapted to Wearable Platform.<br />Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state (colors and selection).",
+                    "more_desc": "Integrates optionally with Agile Planning Poker on your Handheld (Smartphone or Tablet) to synchronize state.",
+                    "fa_icons": ["fa-android", "fa-mobile", "fa-clock-o"],
+                    "google_play_link": "https://play.google.com/store/apps/details?id=br.com.planning.poker.wear",
+                    "github_source": "https://github.com/wakim/wearable-planning-poker"
+                }
+            ]
+        },
 
-                    "globals": {
-                        "interests": [
-                            {"name": "Android", "sub": ["MVP", "Dagger", "RxJava", "Tests", "Kotlin", "Material Design"]},
-                            {"name": "JavaEE", "sub": ["JSF", "JPA", "EJB", "Servlet's", "JSP", "JMS", "PrimeFaces", "JDBC", "REST"]},
-                            {"name": "Javascript", "sub": ["KnockoutJS", "JQuery", "AngularJS", "jQuery DataTables"]},
-                            {"name": "Agile Development", "sub": ["Scrum"]},
-                            {"name": "Git"},
-                            {"name": "HTML5", "sub": ["CSS3"]},
-                            {"name": "SQL", "sub": ["MySQL", "DB2", "Postgres"]},
-                            {"name": "C/C++"},
-                            {"name": "iOS"}
-                        ]
-                    },
+        "globals": {
+            "interests": [
+                {"name": "Android", "sub": ["MVP", "Dagger", "RxJava", "Tests", "Kotlin", "Material Design"]},
+                {"name": "JavaEE", "sub": ["JSF", "JPA", "EJB", "Servlet's", "JSP", "JMS", "PrimeFaces", "JDBC", "REST"]},
+                {"name": "Javascript", "sub": ["KnockoutJS", "JQuery", "AngularJS", "jQuery DataTables"]},
+                {"name": "Agile Development", "sub": ["Scrum"]},
+                {"name": "Git"},
+                {"name": "HTML5", "sub": ["CSS3"]},
+                {"name": "SQL", "sub": ["MySQL", "DB2", "Postgres"]},
+                {"name": "C/C++"},
+                {"name": "iOS"}
+            ]
+        },
 
-                    "_strings": {
-                        "pt" : {
-                            "title": "Wakim Jraige - Site Pessoal",
-                            "more": "Mais",
-                            "less": "Menos",
-                            "personal_projects": "Projetos pessoais",
-                            "google_play_badge_alt": "Medalha Google Play",
-                            "google_play_badge_link": "images/pt-br_generic_rgb_wo_45.png",
-                            "some_interests": "Tecnologias de interesse",
-                            "experiences": "Experiências",
-                            "resume": "Resumo",
-                            "main_activities": "Principais atividades",
-                            "contacts": "Contatos",
-                            "github_contributions": "Contribuições no Github",
-                            "contain_private_contributions": "Contém contribuições privadas",
-                            "source": "Fonte"
-                        },
-                        "en": {
-                            "title": "Wakim Jraige - Web Site",
-                            "more": "More",
-                            "less": "Less",
-                            "personal_projects": "Personal projects",
-                            "google_play_badge_alt": "Google Play Badge",
-                            "google_play_badge_link": "images/en_generic_rgb_wo_45.png",
-                            "some_interests": "Technologies of interest",
-                            "experiences": "Experiences",
-                            "resume": "Resume",
-                            "main_activities": "Main Activies",
-                            "contacts": "Contacts",
-                            "github_contributions": "Github Contributions",
-                            "contain_private_contributions": "Contain private contributions",
-                            "source": "Source"
-                        }
-                    }
-                };
+        "_strings": {
+            "pt" : {
+                "title": "Wakim Jraige - Site Pessoal",
+                "more": "Mais",
+                "less": "Menos",
+                "personal_projects": "Projetos pessoais",
+                "google_play_badge_alt": "Medalha Google Play",
+                "google_play_badge_link": "images/pt-br_generic_rgb_wo_45.png",
+                "some_interests": "Tecnologias de interesse",
+                "experiences": "Experiências",
+                "resume": "Resumo",
+                "main_activities": "Principais atividades",
+                "contacts": "Contatos",
+                "github_contributions": "Contribuições no Github",
+                "contain_private_contributions": "Contém contribuições privadas",
+                "source": "Fonte"
+            },
+            "en": {
+                "title": "Wakim Jraige - Web Site",
+                "more": "More",
+                "less": "Less",
+                "personal_projects": "Personal projects",
+                "google_play_badge_alt": "Google Play Badge",
+                "google_play_badge_link": "images/en_generic_rgb_wo_45.png",
+                "some_interests": "Technologies of interest",
+                "experiences": "Experiences",
+                "resume": "Resume",
+                "main_activities": "Main Activies",
+                "contacts": "Contacts",
+                "github_contributions": "Github Contributions",
+                "contain_private_contributions": "Contain private contributions",
+                "source": "Source"
+            }
+        }
+    };
 
     var app = angular.module('root', []);
 
